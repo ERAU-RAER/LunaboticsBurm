@@ -8,4 +8,4 @@
 
 - Lidar:
 
--Actuators:
+- Actuators:
