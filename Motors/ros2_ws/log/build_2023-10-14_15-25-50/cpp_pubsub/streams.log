@@ -1,0 +1,29 @@
+[0.096s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub -- -j8 -l8
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.185s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.185s] [ 75%] Built target listener
+[7.683s] [100%] [32m[1mLinking CXX executable talker[0m
+[8.566s] [100%] Built target talker
+[8.581s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub -- -j8 -l8
+[8.648s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub
+[8.663s] -- Install configuration: ""
+[8.664s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[8.667s] -- Set runtime path of "/home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[8.668s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[8.669s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[8.669s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[8.670s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[8.670s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[8.671s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[8.671s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[8.671s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[8.672s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[8.672s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[8.672s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[8.673s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[8.673s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[8.673s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[8.673s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[8.673s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[8.678s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub

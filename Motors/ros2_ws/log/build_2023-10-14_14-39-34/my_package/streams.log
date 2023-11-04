@@ -1,0 +1,51 @@
+[0.195s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/my_package
+[1.183s] -- The C compiler identification is GNU 11.4.0
+[4.999s] -- The CXX compiler identification is GNU 11.4.0
+[7.735s] -- Detecting C compiler ABI info
+[8.497s] -- Detecting C compiler ABI info - done
+[8.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.510s] -- Detecting C compile features
+[8.510s] -- Detecting C compile features - done
+[8.517s] -- Detecting CXX compiler ABI info
+[9.263s] -- Detecting CXX compiler ABI info - done
+[9.290s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.291s] -- Detecting CXX compile features
+[9.291s] -- Detecting CXX compile features - done
+[9.296s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[9.687s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[9.879s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[10.080s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.080s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jake_161/Lunabotics/ros2_ws/src/my_package/include>
+[10.080s] -- Configured cppcheck exclude dirs and/or files: 
+[10.082s] -- Added test 'lint_cmake' to check CMake code style
+[10.085s] -- Added test 'uncrustify' to check C / C++ code style
+[10.086s] -- Configured uncrustify additional arguments: 
+[10.087s] -- Added test 'xmllint' to check XML markup files
+[10.089s] -- Configuring done
+[10.097s] -- Generating done
+[10.099s] -- Build files have been written to: /home/jake_161/Lunabotics/ros2_ws/build/my_package
+[10.106s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/my_package
+[10.109s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/my_package -- -j8 -l8
+[10.175s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[10.218s] [100%] [32m[1mLinking CXX executable my_node[0m
+[10.945s] [100%] Built target my_node
+[10.960s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/my_package -- -j8 -l8
+[11.002s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/my_package
+[11.014s] -- Install configuration: ""
+[11.014s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/lib/my_package/my_node
+[11.016s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[11.016s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[11.017s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[11.017s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[11.017s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/environment/path.sh
+[11.017s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/environment/path.dsv
+[11.018s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/local_setup.bash
+[11.018s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/local_setup.sh
+[11.018s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/local_setup.zsh
+[11.018s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/local_setup.dsv
+[11.019s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/package.dsv
+[11.019s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[11.020s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[11.020s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[11.021s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/my_package/share/my_package/package.xml
+[11.025s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/my_package

@@ -1,0 +1,20 @@
+{
+  "package_name": "turtlesim",
+  "output_dir": "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_generator_type_description/turtlesim",
+  "idl_tuples": [
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces",
+    "action_msgs:/opt/ros/iron/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/iron/share/unique_identifier_msgs"
+  ]
+}

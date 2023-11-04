@@ -1,0 +1,200 @@
+[2.282s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'cpp_srvcli']
+[2.282s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['cpp_srvcli'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f968b549de0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f968b54a140>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f968b54a140>>)
+[2.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.361s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jake_161/Lunabotics/ros2_ws'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ignore'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ignore_ament_install'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['colcon_pkg']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'colcon_pkg'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['colcon_meta']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'colcon_meta'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['ros']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ros'
+[2.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_pubsub' with type 'ros.ament_cmake' and name 'cpp_pubsub'
+[2.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[2.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extension 'ignore'
+[2.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extension 'ignore_ament_install'
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extensions ['colcon_pkg']
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extension 'colcon_pkg'
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extensions ['colcon_meta']
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extension 'colcon_meta'
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extensions ['ros']
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_srvcli) by extension 'ros'
+[2.387s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_srvcli' with type 'ros.ament_cmake' and name 'cpp_srvcli'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore_ament_install'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_pkg']
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_pkg'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_meta']
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_meta'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ros']
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ros'
+[2.388s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_package' with type 'ros.ament_cmake' and name 'my_package'
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore'
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore_ament_install'
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_pkg']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_pkg'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_meta']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_meta'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ros']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ros'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['cmake', 'python']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'cmake'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['python_setup_py']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python_setup_py'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extension 'ignore'
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) ignored
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extension 'ignore'
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) ignored
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extension 'ignore'
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) ignored
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ignore', 'ignore_ament_install']
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore'
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore_ament_install'
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_pkg']
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_pkg'
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_meta']
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_meta'
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ros']
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ros'
+[2.392s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_tutorials/turtlesim' with type 'ros.ament_cmake' and name 'turtlesim'
+[2.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.495s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cpp_pubsub' in 'src/cpp_pubsub'
+[2.495s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'my_package' in 'src/my_package'
+[2.495s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'turtlesim' in 'src/ros_tutorials/turtlesim'
+[2.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.598s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/iron
+[2.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_args' from command line to 'None'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target' from command line to 'None'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[2.752s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.752s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli', 'merge_install': False, 'path': '/home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli', 'symlink_install': False, 'test_result_base': None}
+[2.777s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.801s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.801s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli' with build type 'ament_cmake'
+[2.802s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli'
+[2.832s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli
+[60.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli
+[60.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli -- -j8 -l8
+[73.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli -- -j8 -l8
+[73.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli
+[73.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[73.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli
+[73.419s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli' for CMake module files
+[73.419s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli' for CMake config files
+[73.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[73.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[73.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[73.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[73.461s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib'
+[73.462s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/bin'
+[73.462s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[73.463s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib/python3.10/site-packages'
+[73.463s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/bin'
+[73.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[73.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[73.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[73.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[73.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[73.508s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[73.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[73.617s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli' for CMake module files
+[73.619s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli' for CMake config files
+[73.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[73.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[73.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[73.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[73.659s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib'
+[73.659s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/bin'
+[73.659s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[73.660s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/lib/python3.10/site-packages'
+[73.660s] Level 1:colcon.colcon_core.environment:checking '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/bin'
+[73.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[73.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[73.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[73.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[73.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[73.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[73.699s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[73.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[73.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[73.700s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[74.123s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[74.123s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[74.127s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[74.127s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[74.128s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[74.128s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[74.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jake_161/Lunabotics/ros2_ws/install/local_setup.ps1'
+[74.159s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jake_161/Lunabotics/ros2_ws/install/_local_setup_util_ps1.py'
+[74.161s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jake_161/Lunabotics/ros2_ws/install/setup.ps1'
+[74.197s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jake_161/Lunabotics/ros2_ws/install/local_setup.sh'
+[74.198s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jake_161/Lunabotics/ros2_ws/install/_local_setup_util_sh.py'
+[74.199s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jake_161/Lunabotics/ros2_ws/install/setup.sh'
+[74.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jake_161/Lunabotics/ros2_ws/install/local_setup.bash'
+[74.240s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jake_161/Lunabotics/ros2_ws/install/setup.bash'
+[74.281s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jake_161/Lunabotics/ros2_ws/install/local_setup.zsh'
+[74.282s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jake_161/Lunabotics/ros2_ws/install/setup.zsh'

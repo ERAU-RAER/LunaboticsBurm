@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000222] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000304] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001831] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.001921] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.091584] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.092339] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.093533] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub', '--', '-j8', '-l8'], 'cwd': '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', 'false'), ('USER', 'jake_161'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('POWERLINE_COMMAND', 'oh-my-posh'), ('WT_PROFILE_ID', '{51855cb2-8cce-5362-8f54-464b92b32386}'), ('HOME', '/home/jake_161'), ('OLDPWD', '/home/jake_161/Lunabotics/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'jake_161'), ('NAME', 'Muon'), ('WSL_INTEROP', '/run/WSL/7272_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('POSH_SHELL_VERSION', '5.1.16(1)-release'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Calibre2/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/:/mnt/c/Program Files/Java/jdk-13.0.2/bin:/mnt/c/Users/jacob/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/jacob/GitHubDesktop/bin:/mnt/c/Users/jacob/AppData/Local/Programs/oh-my-posh/bin:/snap/bin'), ('WT_SESSION', '27618c2b-545f-4b46-ba63-e61750196fea'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('POSH_THEME', '/home/jake_161/.poshthemes/atomicBit.omp.json'), ('PWD', '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('POSH_PID', '7276'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.098446] (-) TimerEvent: {}
+[0.153423] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.153672] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.186308] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[0.186805] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] Built target listener\n'}
+[0.198677] (-) TimerEvent: {}
+[0.299159] (-) TimerEvent: {}
+[0.399623] (-) TimerEvent: {}
+[0.500467] (-) TimerEvent: {}
+[0.601464] (-) TimerEvent: {}
+[0.701994] (-) TimerEvent: {}
+[0.802519] (-) TimerEvent: {}
+[0.903104] (-) TimerEvent: {}
+[1.003701] (-) TimerEvent: {}
+[1.104298] (-) TimerEvent: {}
+[1.204785] (-) TimerEvent: {}
+[1.305299] (-) TimerEvent: {}
+[1.405815] (-) TimerEvent: {}
+[1.506315] (-) TimerEvent: {}
+[1.606748] (-) TimerEvent: {}
+[1.707268] (-) TimerEvent: {}
+[1.807805] (-) TimerEvent: {}
+[1.908298] (-) TimerEvent: {}
+[2.008844] (-) TimerEvent: {}
+[2.109342] (-) TimerEvent: {}
+[2.209906] (-) TimerEvent: {}
+[2.310675] (-) TimerEvent: {}
+[2.411318] (-) TimerEvent: {}
+[2.512046] (-) TimerEvent: {}
+[2.612877] (-) TimerEvent: {}
+[2.714404] (-) TimerEvent: {}
+[2.814909] (-) TimerEvent: {}
+[2.915417] (-) TimerEvent: {}
+[3.015953] (-) TimerEvent: {}
+[3.116491] (-) TimerEvent: {}
+[3.217226] (-) TimerEvent: {}
+[3.317877] (-) TimerEvent: {}
+[3.418441] (-) TimerEvent: {}
+[3.518947] (-) TimerEvent: {}
+[3.619456] (-) TimerEvent: {}
+[3.719987] (-) TimerEvent: {}
+[3.820543] (-) TimerEvent: {}
+[3.921062] (-) TimerEvent: {}
+[4.021573] (-) TimerEvent: {}
+[4.122086] (-) TimerEvent: {}
+[4.222621] (-) TimerEvent: {}
+[4.323146] (-) TimerEvent: {}
+[4.423705] (-) TimerEvent: {}
+[4.524224] (-) TimerEvent: {}
+[4.624979] (-) TimerEvent: {}
+[4.725599] (-) TimerEvent: {}
+[4.826068] (-) TimerEvent: {}
+[4.926509] (-) TimerEvent: {}
+[5.027035] (-) TimerEvent: {}
+[5.127592] (-) TimerEvent: {}
+[5.228193] (-) TimerEvent: {}
+[5.328721] (-) TimerEvent: {}
+[5.429282] (-) TimerEvent: {}
+[5.529782] (-) TimerEvent: {}
+[5.630363] (-) TimerEvent: {}
+[5.730880] (-) TimerEvent: {}
+[5.831469] (-) TimerEvent: {}
+[5.931971] (-) TimerEvent: {}
+[6.032472] (-) TimerEvent: {}
+[6.133360] (-) TimerEvent: {}
+[6.233908] (-) TimerEvent: {}
+[6.334642] (-) TimerEvent: {}
+[6.435287] (-) TimerEvent: {}
+[6.535916] (-) TimerEvent: {}
+[6.636428] (-) TimerEvent: {}
+[6.736936] (-) TimerEvent: {}
+[6.837509] (-) TimerEvent: {}
+[6.938152] (-) TimerEvent: {}
+[7.038753] (-) TimerEvent: {}
+[7.139235] (-) TimerEvent: {}
+[7.239856] (-) TimerEvent: {}
+[7.340360] (-) TimerEvent: {}
+[7.441497] (-) TimerEvent: {}
+[7.542036] (-) TimerEvent: {}
+[7.642601] (-) TimerEvent: {}
+[7.684637] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[7.742802] (-) TimerEvent: {}
+[7.843384] (-) TimerEvent: {}
+[7.943991] (-) TimerEvent: {}
+[8.044513] (-) TimerEvent: {}
+[8.145573] (-) TimerEvent: {}
+[8.246230] (-) TimerEvent: {}
+[8.346789] (-) TimerEvent: {}
+[8.447316] (-) TimerEvent: {}
+[8.547846] (-) TimerEvent: {}
+[8.568242] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[8.582973] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[8.632840] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[8.649629] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub'], 'cwd': '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', 'false'), ('USER', 'jake_161'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('POWERLINE_COMMAND', 'oh-my-posh'), ('WT_PROFILE_ID', '{51855cb2-8cce-5362-8f54-464b92b32386}'), ('HOME', '/home/jake_161'), ('OLDPWD', '/home/jake_161/Lunabotics/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'jake_161'), ('NAME', 'Muon'), ('WSL_INTEROP', '/run/WSL/7272_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('POSH_SHELL_VERSION', '5.1.16(1)-release'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Calibre2/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/:/mnt/c/Program Files/Java/jdk-13.0.2/bin:/mnt/c/Users/jacob/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/jacob/GitHubDesktop/bin:/mnt/c/Users/jacob/AppData/Local/Programs/oh-my-posh/bin:/snap/bin'), ('WT_SESSION', '27618c2b-545f-4b46-ba63-e61750196fea'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('POSH_THEME', '/home/jake_161/.poshthemes/atomicBit.omp.json'), ('PWD', '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('POSH_PID', '7276'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[8.650636] (-) TimerEvent: {}
+[8.664912] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.665421] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[8.669174] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""\n'}
+[8.669757] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener\n'}
+[8.670302] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[8.670993] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[8.671506] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[8.671801] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[8.672652] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[8.672855] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[8.672996] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[8.673555] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[8.674066] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[8.674274] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[8.674447] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[8.674578] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[8.674706] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[8.674849] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[8.674974] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[8.679106] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[8.750902] (-) TimerEvent: {}
+[8.852095] (-) TimerEvent: {}
+[8.944064] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[8.947439] (-) EventReactorShutdown: {}

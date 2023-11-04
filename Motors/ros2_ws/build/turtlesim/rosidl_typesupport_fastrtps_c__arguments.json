@@ -1,0 +1,51 @@
+{
+  "package_name": "turtlesim",
+  "output_dir": "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_typesupport_fastrtps_c/turtlesim",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/iron/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/iron/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/iron/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/iron/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/iron/share/unique_identifier_msgs/msg/UUID.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/action/RotateAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/msg/Color.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/msg/Pose.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/Kill.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/SetPen.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/Spawn.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/TeleportAbsolute.idl",
+    "/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/TeleportRelative.idl",
+    "/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/iron/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/iron/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/iron/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/iron/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/iron/share/unique_identifier_msgs/msg/UUID.idl"
+  ]
+}

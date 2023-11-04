@@ -1,0 +1,364 @@
+[0.112s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/turtlesim -- -j8 -l8
+[0.202s] [  0%] Built target turtlesim__rosidl_generator_type_description
+[0.246s] [  0%] Built target ament_cmake_python_copy_turtlesim
+[0.272s] [  1%] Built target turtlesim__cpp
+[0.304s] [ 24%] Built target turtlesim__rosidl_generator_c
+[0.424s] [ 33%] Built target turtlesim__rosidl_typesupport_introspection_c
+[0.447s] [ 42%] Built target turtlesim__rosidl_typesupport_c
+[0.449s] [ 50%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp
+[0.454s] [ 58%] Built target turtlesim__rosidl_typesupport_cpp
+[0.462s] [ 67%] Built target turtlesim__rosidl_typesupport_fastrtps_c
+[0.477s] [ 75%] Built target turtlesim__rosidl_typesupport_introspection_cpp
+[0.547s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_node[0m
+[0.572s] [ 75%] Built target turtlesim
+[0.577s] [ 76%] Built target draw_square
+[0.585s] [ 78%] Built target mimic
+[0.585s] [ 80%] Built target turtle_teleop_key
+[0.648s] [ 80%] Built target turtlesim__py
+[0.682s] [ 86%] Built target turtlesim_node
+[0.730s] [ 94%] Built target turtlesim__rosidl_generator_py
+[0.800s] [ 96%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext
+[0.802s] [ 98%] Built target turtlesim__rosidl_typesupport_c__pyext
+[0.803s] [100%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext
+[1.088s] running egg_info
+[1.090s] writing turtlesim.egg-info/PKG-INFO
+[1.090s] writing dependency_links to turtlesim.egg-info/dependency_links.txt
+[1.091s] writing top-level names to turtlesim.egg-info/top_level.txt
+[1.098s] reading manifest file 'turtlesim.egg-info/SOURCES.txt'
+[1.100s] writing manifest file 'turtlesim.egg-info/SOURCES.txt'
+[1.159s] [100%] Built target ament_cmake_python_build_turtlesim_egg
+[1.187s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/turtlesim -- -j8 -l8
+[1.745s] Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/turtlesim
+[1.762s] -- Install configuration: ""
+[1.762s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim
+[1.762s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.json
+[1.763s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Color.json
+[1.764s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Pose.json
+[1.764s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill.json
+[1.764s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen.json
+[1.765s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn.json
+[1.765s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.json
+[1.766s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.json
+[1.766s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.767s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.767s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.767s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__description.c
+[1.768s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.c
+[1.768s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.h
+[1.769s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.c
+[1.769s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.h
+[1.770s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.h
+[1.770s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.h
+[1.771s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.771s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.h
+[1.772s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.h
+[1.772s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.773s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.c
+[1.773s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.h
+[1.774s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.c
+[1.775s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__description.c
+[1.776s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.c
+[1.776s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.h
+[1.777s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.h
+[1.778s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.h
+[1.780s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.c
+[1.780s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.h
+[1.782s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.h
+[1.782s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__description.c
+[1.783s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_generator_c__visibility_control.h
+[1.783s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.784s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.h
+[1.784s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.h
+[1.785s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.h
+[1.785s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.786s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.c
+[1.786s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.h
+[1.787s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.h
+[1.787s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.h
+[1.788s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.h
+[1.789s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__description.c
+[1.789s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.h
+[1.789s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.h
+[1.790s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.c
+[1.790s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.c
+[1.791s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.h
+[1.791s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.h
+[1.791s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__description.c
+[1.792s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.c
+[1.792s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.c
+[1.792s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__description.c
+[1.792s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.c
+[1.792s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.h
+[1.792s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.h
+[1.793s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.h
+[1.793s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.h
+[1.794s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.c
+[1.795s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.h
+[1.795s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.h
+[1.796s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.c
+[1.797s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.c
+[1.797s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.h
+[1.797s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.c
+[1.798s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__description.c
+[1.798s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__description.c
+[1.798s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.h
+[1.798s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.h
+[1.799s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/library_path.sh
+[1.799s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv
+[1.800s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so
+[1.801s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.801s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.802s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.803s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h
+[1.803s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.804s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.805s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h
+[1.806s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[1.806s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.809s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.809s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so
+[1.810s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.811s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.811s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.hpp
+[1.811s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.811s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__builder.hpp
+[1.812s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.hpp
+[1.812s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__traits.hpp
+[1.812s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.812s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__traits.hpp
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.hpp
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__builder.hpp
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__builder.hpp
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.hpp
+[1.813s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__traits.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.hpp
+[1.814s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.hpp
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.hpp
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__builder.hpp
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__builder.hpp
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__builder.hpp
+[1.815s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__builder.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__builder.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__traits.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__traits.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.hpp
+[1.816s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__traits.hpp
+[1.817s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.hpp
+[1.817s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__traits.hpp
+[1.817s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__traits.hpp
+[1.817s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.hpp
+[1.818s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.818s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.818s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.819s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp
+[1.819s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/dds_fastrtps
+[1.819s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.819s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.820s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.820s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.820s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp
+[1.820s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/dds_fastrtps
+[1.820s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.821s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.821s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp
+[1.821s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp
+[1.821s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp
+[1.822s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/dds_fastrtps
+[1.822s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp
+[1.822s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp
+[1.822s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so
+[1.822s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.823s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.823s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.823s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h
+[1.823s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.c
+[1.824s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.824s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.824s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.824s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.c
+[1.825s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.c
+[1.825s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h
+[1.825s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[1.825s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.826s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.826s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.c
+[1.826s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h
+[1.826s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.c
+[1.826s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h
+[1.827s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.c
+[1.827s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.c
+[1.827s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h
+[1.828s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h
+[1.828s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h
+[1.828s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.c
+[1.829s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so
+[1.829s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so
+[1.829s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim
+[1.830s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action
+[1.830s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail
+[1.830s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.cpp
+[1.830s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp
+[1.830s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg
+[1.831s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail
+[1.831s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp
+[1.831s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.cpp
+[1.832s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[1.832s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.cpp
+[1.832s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv
+[1.833s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail
+[1.833s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.cpp
+[1.833s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.cpp
+[1.834s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.cpp
+[1.834s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.cpp
+[1.834s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp
+[1.834s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp
+[1.835s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp
+[1.835s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.cpp
+[1.835s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp
+[1.836s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp
+[1.836s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so
+[1.836s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so
+[1.837s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh
+[1.837s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv
+[1.837s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim-1.6.1-py3.10.egg-info
+[1.837s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim-1.6.1-py3.10.egg-info/SOURCES.txt
+[1.838s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim-1.6.1-py3.10.egg-info/dependency_links.txt
+[1.838s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim-1.6.1-py3.10.egg-info/PKG-INFO
+[1.839s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim-1.6.1-py3.10.egg-info/top_level.txt
+[1.839s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim
+[1.839s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/libturtlesim__rosidl_generator_py.so
+[1.840s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_c.c
+[1.840s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/__init__.py
+[1.840s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.841s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/action
+[1.841s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/action/__init__.py
+[1.841s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/action/_rotate_absolute_s.c
+[1.841s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/action/_rotate_absolute.py
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg/_pose_s.c
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg/__init__.py
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg/_pose.py
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg/_color.py
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg/_color_s.c
+[1.842s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_introspection_c.c
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_kill_s.c
+[1.843s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_teleport_relative_s.c
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_teleport_absolute_s.c
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/__init__.py
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_set_pen.py
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_spawn.py
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_teleport_absolute.py
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_spawn_s.c
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_teleport_relative.py
+[1.844s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_set_pen_s.c
+[1.845s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv/_kill.py
+[1.895s] Listing '/home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim'...
+[1.895s] Listing '/home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/action'...
+[1.895s] Listing '/home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/msg'...
+[1.895s] Listing '/home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/srv'...
+[1.906s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.906s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.909s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/python3.10/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.910s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_py.so
+[1.911s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl
+[1.913s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Color.idl
+[1.914s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Pose.idl
+[1.914s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill.idl
+[1.915s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl
+[1.915s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl
+[1.916s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl
+[1.916s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl
+[1.917s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action
+[1.917s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Color.msg
+[1.918s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/msg/Pose.msg
+[1.918s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill.srv
+[1.918s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg
+[1.918s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg
+[1.919s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv
+[1.919s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg
+[1.919s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg
+[1.919s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv
+[1.920s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg
+[1.921s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg
+[1.921s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv
+[1.922s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg
+[1.922s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg
+[1.923s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv
+[1.924s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg
+[1.925s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg
+[1.926s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/turtlesim/turtlesim_node
+[1.927s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key
+[1.928s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/turtlesim/draw_square
+[1.929s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/lib/turtlesim/mimic
+[1.929s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images
+[1.930s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/bouncy.png
+[1.930s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/rolling.png
+[1.931s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/ardent.png
+[1.931s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/galactic.png
+[1.932s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/dashing.png
+[1.932s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/humble.png
+[1.933s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/foxy.png
+[1.933s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/crystal.png
+[1.933s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/eloquent.png
+[1.934s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/images/iron.png
+[1.934s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/launch
+[1.934s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py
+[1.934s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim
+[1.935s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim
+[1.935s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh
+[1.935s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv
+[1.935s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/path.sh
+[1.936s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/environment/path.dsv
+[1.936s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/local_setup.bash
+[1.937s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/local_setup.sh
+[1.938s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/local_setup.zsh
+[1.939s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/local_setup.dsv
+[1.940s] -- Installing: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/package.dsv
+[1.940s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim
+[1.941s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport.cmake
+[1.942s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport-noconfig.cmake
+[1.943s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport.cmake
+[1.943s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.944s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cppExport.cmake
+[1.944s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.945s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.945s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake
+[1.946s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.946s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake
+[1.947s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake
+[1.948s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake
+[1.949s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.949s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake
+[1.950s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake
+[1.951s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport.cmake
+[1.952s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport-noconfig.cmake
+[1.952s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake
+[1.953s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.954s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.954s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake
+[1.955s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake
+[1.955s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.956s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.957s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake
+[1.962s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake
+[1.962s] -- Up-to-date: /home/jake_161/Lunabotics/ros2_ws/install/turtlesim/share/turtlesim/package.xml
+[1.963s] Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/turtlesim

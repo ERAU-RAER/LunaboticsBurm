@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000555] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000654] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000747] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003227] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.003324] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.003407] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.100811] (-) TimerEvent: {}
+[0.201437] (-) TimerEvent: {}
+[0.301947] (-) TimerEvent: {}
+[0.402486] (-) TimerEvent: {}
+[0.503038] (-) TimerEvent: {}
+[0.603653] (-) TimerEvent: {}
+[0.704281] (-) TimerEvent: {}
+[0.804930] (-) TimerEvent: {}
+[0.905440] (-) TimerEvent: {}
+[1.005953] (-) TimerEvent: {}
+[1.106519] (-) TimerEvent: {}
+[1.207251] (-) TimerEvent: {}
+[1.307746] (-) TimerEvent: {}
+[1.363097] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build', 'install', '--record', '/home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/jake_161/Lunabotics/ros2_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': 'false', 'USER': 'jake_161', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'POWERLINE_COMMAND': 'oh-my-posh', 'WT_PROFILE_ID': '{51855cb2-8cce-5362-8f54-464b92b32386}', 'HOME': '/home/jake_161', 'OLDPWD': '/home/jake_161/Lunabotics/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'iron', 'LOGNAME': 'jake_161', 'NAME': 'Muon', 'WSL_INTEROP': '/run/WSL/7272_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'POSH_SHELL_VERSION': '5.1.16(1)-release', 'PATH': '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Calibre2/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/jacob/AppData/Local/Programs/Python/Python39/:/mnt/c/Program Files/Java/jdk-13.0.2/bin:/mnt/c/Users/jacob/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/jacob/GitHubDesktop/bin:/mnt/c/Users/jacob/AppData/Local/Programs/oh-my-posh/bin:/snap/bin', 'WT_SESSION': '27618c2b-545f-4b46-ba63-e61750196fea', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'POSH_THEME': '/home/jake_161/.poshthemes/atomicBit.omp.json', 'PWD': '/home/jake_161/Lunabotics/ros2_ws/build/py_srvcli', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/prefix_override:/home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'POSH_PID': '7276', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[1.408000] (-) TimerEvent: {}
+[1.508527] (-) TimerEvent: {}
+[1.609056] (-) TimerEvent: {}
+[1.709567] (-) TimerEvent: {}
+[1.779100] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[1.780032] (py_srvcli) StdoutLine: {'line': b'creating ../../build/py_srvcli/py_srvcli.egg-info\n'}
+[1.780660] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[1.781007] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[1.781426] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[1.781643] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[1.781971] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[1.782419] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.785251] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.786217] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.786742] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[1.786900] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[1.787002] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build\n'}
+[1.787405] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib\n'}
+[1.787910] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.788308] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/__init__.py -> /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.788804] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/client_member_function.py -> /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.788950] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/service_member_function.py -> /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.789063] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[1.795492] (py_srvcli) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.795722] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.795994] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[1.797118] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[1.797501] (py_srvcli) StdoutLine: {'line': b'copying /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[1.797925] (py_srvcli) StdoutLine: {'line': b'copying /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli/client_member_function.py -> /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[1.798078] (py_srvcli) StdoutLine: {'line': b'copying /home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[1.798607] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/__init__.py to __init__.cpython-310.pyc\n'}
+[1.799100] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/client_member_function.py to client_member_function.cpython-310.pyc\n'}
+[1.799919] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-310.pyc\n'}
+[1.800449] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[1.801153] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/share/ament_index\n'}
+[1.801525] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/share/ament_index/resource_index\n'}
+[1.801676] (py_srvcli) StdoutLine: {'line': b'creating /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[1.801976] (py_srvcli) StdoutLine: {'line': b'copying resource/py_srvcli -> /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[1.802172] (py_srvcli) StdoutLine: {'line': b'copying package.xml -> /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/share/py_srvcli\n'}
+[1.802566] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.804666] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info\n'}
+[1.806153] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[1.809741] (-) TimerEvent: {}
+[1.838595] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[1.838955] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/jake_161/Lunabotics/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[1.839461] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/jake_161/Lunabotics/ros2_ws/build/py_srvcli/install.log'\n"}
+[1.877910] (py_srvcli) CommandEnded: {'returncode': 0}
+[1.910482] (-) TimerEvent: {}
+[1.980240] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[1.981013] (-) EventReactorShutdown: {}

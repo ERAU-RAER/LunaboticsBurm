@@ -1,0 +1,6 @@
+Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub
+Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_pubsub
+Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub -- -j8 -l8
+Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub -- -j8 -l8
+Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub
+Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_pubsub

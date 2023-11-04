@@ -1,0 +1,4 @@
+source;share/cpp_pubsub/local_setup.bash
+source;share/cpp_pubsub/local_setup.dsv
+source;share/cpp_pubsub/local_setup.sh
+source;share/cpp_pubsub/local_setup.zsh
