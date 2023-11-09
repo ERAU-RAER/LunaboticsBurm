@@ -1,0 +1,3 @@
+[console_scripts]
+serial_handler = serial_pkg.serial_handler:main
+
