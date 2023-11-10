@@ -1,0 +1,17 @@
+[0.601s] Invoking command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg': PYTHONPATH=/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/prefix_override:/home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/build --no-deps install_data
+[0.805s] running develop
+[0.912s] running egg_info
+[0.912s] writing serial_pkg.egg-info/PKG-INFO
+[0.912s] writing dependency_links to serial_pkg.egg-info/dependency_links.txt
+[0.912s] writing entry points to serial_pkg.egg-info/entry_points.txt
+[0.912s] writing requirements to serial_pkg.egg-info/requires.txt
+[0.913s] writing top-level names to serial_pkg.egg-info/top_level.txt
+[0.914s] reading manifest file 'serial_pkg.egg-info/SOURCES.txt'
+[0.915s] writing manifest file 'serial_pkg.egg-info/SOURCES.txt'
+[0.916s] running build_ext
+[0.916s] Creating /home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages/serial-pkg.egg-link (link to .)
+[0.917s] Installing serial_handler = serial_pkg.serial_handler:mainserial_listener script to /home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/serial_pkg
+[0.917s] 
+[0.917s] Installed /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg
+[0.918s] running install_data
+[0.950s] Invoked command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg' returned '0': PYTHONPATH=/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/prefix_override:/home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/build --no-deps install_data

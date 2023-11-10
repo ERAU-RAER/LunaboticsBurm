@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'serial_handler = serial_pkg.serial_handler:main'
+            'serial_handler = serial_pkg.serial_handler:main',
+            'serial_listener = serial_pkg.serial_listener:main',
         ],
     },
 )

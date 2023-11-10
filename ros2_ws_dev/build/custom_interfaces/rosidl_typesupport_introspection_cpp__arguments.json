@@ -1,0 +1,19 @@
+{
+  "package_name": "custom_interfaces",
+  "output_dir": "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_typesupport_introspection_cpp/custom_interfaces",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/SerialRead.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/SerialRead.idl"
+  ]
+}
