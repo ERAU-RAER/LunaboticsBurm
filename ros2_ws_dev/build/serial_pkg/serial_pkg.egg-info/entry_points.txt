@@ -1,4 +1,0 @@
-[console_scripts]
-serial_handler = serial_pkg.serial_handler:main
-serial_listener = serial_pkg.serial_listener:main
-
