@@ -1,7 +1,0 @@
-{
-  "package_name": "custom_interfaces",
-  "output_dir": "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_generator_type_description/custom_interfaces",
-  "idl_tuples": [
-    "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/SerialRead.idl"
-  ]
-}
