@@ -11,7 +11,7 @@ class SerialListener(Node):
         self.get_logger().info('Serial Listener Begin')
 
     def listener_callback(self,msg):
-        print(int.from_bytes(b''.join(msg.data),'big'))
+        print(msg.data)
         #self.get_logger().info('I heard: %s from %s' % serial_msg % msg.identifier)
 
 def main():

@@ -1,0 +1,24 @@
+[3.362s] Invoking command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg': PYTHONPATH=/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/prefix_override:/home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/build --no-deps install_data
+[4.553s] running develop
+[4.559s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.560s]   warnings.warn(
+[4.565s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.565s]   warnings.warn(
+[5.340s] running egg_info
+[5.340s] creating serial_pkg.egg-info
+[5.341s] writing serial_pkg.egg-info/PKG-INFO
+[5.342s] writing dependency_links to serial_pkg.egg-info/dependency_links.txt
+[5.343s] writing entry points to serial_pkg.egg-info/entry_points.txt
+[5.344s] writing requirements to serial_pkg.egg-info/requires.txt
+[5.345s] writing top-level names to serial_pkg.egg-info/top_level.txt
+[5.345s] writing manifest file 'serial_pkg.egg-info/SOURCES.txt'
+[5.352s] reading manifest file 'serial_pkg.egg-info/SOURCES.txt'
+[5.355s] writing manifest file 'serial_pkg.egg-info/SOURCES.txt'
+[5.361s] running build_ext
+[5.362s] Creating /home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages/serial-pkg.egg-link (link to .)
+[5.366s] Installing serial_handler script to /home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/serial_pkg
+[5.367s] Installing serial_listener script to /home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/serial_pkg
+[5.369s] 
+[5.369s] Installed /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg
+[5.370s] running install_data
+[5.510s] Invoked command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg' returned '0': PYTHONPATH=/home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/prefix_override:/home/colin/LunaboticsBurm/ros2_ws_dev/install/serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/colin/LunaboticsBurm/ros2_ws_dev/build/serial_pkg/build --no-deps install_data
