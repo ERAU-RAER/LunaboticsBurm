@@ -244,13 +244,13 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 PYTHON_INCLUDE_DIR:PATH=/usr/include/python3.10
 
 //Path to a library.
-PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.10.so
+PYTHON_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libpython3.10.so
 
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Name of the computer/site where compile is being run
-SITE:STRING=ColinsLaptop
+SITE:STRING=colinpi
 
 //Path to a library.
 _lib:FILEPATH=/opt/ros/iron/lib/librosidl_typesupport_cpp.so
@@ -361,13 +361,13 @@ custom_interfaces_SOURCE_DIR:STATIC=/home/colin/LunaboticsBurm/ros2_ws_dev/src/c
 custom_interfaces__rosidl_generator_c_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rcutils::rcutils;
 
 //Dependencies for the target
-custom_interfaces__rosidl_generator_py_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;/usr/lib/x86_64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_c;
+custom_interfaces__rosidl_generator_py_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;/usr/lib/aarch64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_c;
 
 //Dependencies for the target
 custom_interfaces__rosidl_typesupport_c_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;
 
 //Dependencies for the target
-custom_interfaces__rosidl_typesupport_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/x86_64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
+custom_interfaces__rosidl_typesupport_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/aarch64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
 
 //Dependencies for the target
 custom_interfaces__rosidl_typesupport_cpp_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_cpp::rosidl_typesupport_cpp;general;rosidl_typesupport_c::rosidl_typesupport_c;
@@ -376,7 +376,7 @@ custom_interfaces__rosidl_typesupport_cpp_LIB_DEPENDS:STATIC=general;custom_inte
 custom_interfaces__rosidl_typesupport_fastrtps_c_LIB_DEPENDS:STATIC=general;fastcdr;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;general;rosidl_typesupport_fastrtps_c::rosidl_typesupport_fastrtps_c;general;custom_interfaces__rosidl_generator_c;
 
 //Dependencies for the target
-custom_interfaces__rosidl_typesupport_fastrtps_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/x86_64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_fastrtps_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
+custom_interfaces__rosidl_typesupport_fastrtps_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/aarch64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_fastrtps_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
 
 //Dependencies for the target
 custom_interfaces__rosidl_typesupport_fastrtps_cpp_LIB_DEPENDS:STATIC=general;fastcdr;general;rmw::rmw;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;general;custom_interfaces__rosidl_generator_c;
@@ -385,7 +385,7 @@ custom_interfaces__rosidl_typesupport_fastrtps_cpp_LIB_DEPENDS:STATIC=general;fa
 custom_interfaces__rosidl_typesupport_introspection_c_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_introspection_c::rosidl_typesupport_introspection_c;
 
 //Dependencies for the target
-custom_interfaces__rosidl_typesupport_introspection_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/x86_64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_introspection_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
+custom_interfaces__rosidl_typesupport_introspection_c__pyext_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_py;general;/usr/lib/aarch64-linux-gnu/libpython3.10.so;general;custom_interfaces__rosidl_typesupport_introspection_c;general;custom_interfaces__rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;general;rosidl_runtime_c::rosidl_runtime_c;general;/opt/ros/iron/lib/librmw.so;general;rosidl_dynamic_typesupport::rosidl_dynamic_typesupport;general;rcutils::rcutils;general;rosidl_runtime_c::rosidl_runtime_c;
 
 //Dependencies for the target
 custom_interfaces__rosidl_typesupport_introspection_cpp_LIB_DEPENDS:STATIC=general;custom_interfaces__rosidl_generator_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_introspection_cpp::rosidl_typesupport_introspection_cpp;
@@ -616,11 +616,11 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]
 //Details about finding PythonExtra
-FIND_PACKAGE_MESSAGE_DETAILS_PythonExtra:INTERNAL=[.so][/usr/include/python3.10][/usr/lib/x86_64-linux-gnu/libpython3.10.so][cpython-310-x86_64-linux-gnu][.cpython-310-x86_64-linux-gnu][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonExtra:INTERNAL=[.so][/usr/include/python3.10][/usr/lib/aarch64-linux-gnu/libpython3.10.so][cpython-310-aarch64-linux-gnu][.cpython-310-aarch64-linux-gnu][v()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.10.12(3.6)]
 //Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.12(3.5)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/aarch64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.12(3.5)]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR
@@ -634,12 +634,12 @@ PYTHON_LIBRARY-ADVANCED:INTERNAL=1
 PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //The SOABI suffix for Python native extensions. See PEP-3149:
 // https://www.python.org/dev/peps/pep-3149/.
-PYTHON_SOABI:INTERNAL=cpython-310-x86_64-linux-gnu
+PYTHON_SOABI:INTERNAL=cpython-310-aarch64-linux-gnu
 //The full suffix for Python native extensions. See PEP-3149: https://www.python.org/dev/peps/pep-3149/.
-PythonExtra_EXTENSION_SUFFIX:INTERNAL=.cpython-310-x86_64-linux-gnu
+PythonExtra_EXTENSION_SUFFIX:INTERNAL=.cpython-310-aarch64-linux-gnu
 _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.10
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-aarch64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
 //Index for unique symlink install targets
 __AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=3

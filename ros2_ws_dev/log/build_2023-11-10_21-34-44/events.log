@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.001277] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.002332] (serial_pkg) JobQueued: {'identifier': 'serial_pkg', 'dependencies': OrderedDict()}
+[0.002899] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.074866] (serial_pkg) JobStarted: {'identifier': 'serial_pkg'}
+[0.099085] (-) TimerEvent: {}
+[0.179891] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.181110] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/colin/LunaboticsBurm/ros2_ws_dev/src/custom_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/colin/LunaboticsBurm/ros2_ws_dev/install/custom_interfaces'], 'cwd': '/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'colin'), ('SSH_CLIENT', '192.168.10.147 56764 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/colin/.vscode-server/bin/2b35e1e6d88f1ce073683991d1eff5284a32690f/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('BROWSER', '/home/colin/.vscode-server/bin/2b35e1e6d88f1ce073683991d1eff5284a32690f/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/colin'), ('OLDPWD', '/home/colin/LunaboticsBurm'), ('TERM_PROGRAM_VERSION', '1.84.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-737d5222-d7cc-440f-8711-75146da86ff4.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/colin/.vscode-server/bin/2b35e1e6d88f1ce073683991d1eff5284a32690f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/colin/.vscode-server/bin/2b35e1e6d88f1ce073683991d1eff5284a32690f/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('LOGNAME', 'colin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('PATH', '/home/colin/.vscode-server/bin/2b35e1e6d88f1ce073683991d1eff5284a32690f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-400a380120.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.147 56764 192.168.10.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.200425] (-) TimerEvent: {}
+[0.301509] (-) TimerEvent: {}
+[0.403344] (-) TimerEvent: {}
+[0.431119] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.503546] (-) TimerEvent: {}
+[0.604867] (-) TimerEvent: {}
+[0.690912] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.705051] (-) TimerEvent: {}
+[0.719926] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.805246] (-) TimerEvent: {}
+[0.906583] (-) TimerEvent: {}
+[1.008250] (-) TimerEvent: {}
+[1.013477] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.041345] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.042345] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.043769] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.055992] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.108494] (-) TimerEvent: {}
+[1.211559] (-) TimerEvent: {}
+[1.314715] (-) TimerEvent: {}
+[1.407617] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.414855] (-) TimerEvent: {}
+[1.434480] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.435642] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.437464] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.488178] (custom_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[1.488991] (custom_interfaces) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.489579] (custom_interfaces) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.490157] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[1.490673] (custom_interfaces) StderrLine: {'line': b'\n'}
+[1.491232] (custom_interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[1.492469] (custom_interfaces) StderrLine: {'line': b'  any of the following names:\n'}
+[1.493610] (custom_interfaces) StderrLine: {'line': b'\n'}
+[1.494329] (custom_interfaces) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[1.494858] (custom_interfaces) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[1.495411] (custom_interfaces) StderrLine: {'line': b'\n'}
+[1.495935] (custom_interfaces) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[1.496532] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[1.497277] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[1.497979] (custom_interfaces) StderrLine: {'line': b'  has been installed.\n'}
+[1.498476] (custom_interfaces) StderrLine: {'line': b'\n'}
+[1.500367] (custom_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.501647] (custom_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.502330] (custom_interfaces) StdoutLine: {'line': b'See also "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.503513] (custom_interfaces) CommandEnded: {'returncode': 1}
+[1.515139] (-) TimerEvent: {}
+[1.616722] (-) TimerEvent: {}
+[1.661976] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 1}
+[1.716860] (-) TimerEvent: {}
+[1.817527] (-) TimerEvent: {}
+[1.918318] (-) TimerEvent: {}
+[2.018973] (-) TimerEvent: {}
+[2.119662] (-) TimerEvent: {}
+[2.220378] (-) TimerEvent: {}
+[2.321099] (-) TimerEvent: {}
+[2.422077] (-) TimerEvent: {}
+[2.523360] (-) TimerEvent: {}
+[2.536046] (serial_pkg) JobEnded: {'identifier': 'serial_pkg', 'rc': 'SIGINT'}
+[2.547702] (-) EventReactorShutdown: {}

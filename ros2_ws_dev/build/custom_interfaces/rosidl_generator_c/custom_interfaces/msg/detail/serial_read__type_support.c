@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "custom_interfaces/msg/detail/serial_read__type_support.h"
 #include "custom_interfaces/msg/detail/serial_read__functions.h"
 #include "custom_interfaces/msg/detail/serial_read__struct.h"
+#include "custom_interfaces/msg/detail/serial_read__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

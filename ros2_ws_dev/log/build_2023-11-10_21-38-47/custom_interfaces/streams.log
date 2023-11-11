@@ -1,0 +1,33 @@
+[0.190s] Invoking command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces': /usr/bin/cmake /home/colin/LunaboticsBurm/ros2_ws_dev/src/custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/colin/LunaboticsBurm/ros2_ws_dev/install/custom_interfaces
+[0.432s] -- The C compiler identification is GNU 11.4.0
+[0.685s] -- The CXX compiler identification is GNU 11.4.0
+[0.714s] -- Detecting C compiler ABI info
+[1.006s] -- Detecting C compiler ABI info - done
+[1.032s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.033s] -- Detecting C compile features
+[1.035s] -- Detecting C compile features - done
+[1.047s] -- Detecting CXX compiler ABI info
+[1.402s] -- Detecting CXX compiler ABI info - done
+[1.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.435s] -- Detecting CXX compile features
+[1.438s] -- Detecting CXX compile features - done
+[1.501s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[1.504s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.505s]   has asked CMake to find a package configuration file provided by
+[1.506s]   "ament_cmake", but CMake did not find one.
+[1.507s] 
+[1.507s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.508s]   any of the following names:
+[1.509s] 
+[1.510s]     ament_cmakeConfig.cmake
+[1.511s]     ament_cmake-config.cmake
+[1.523s] 
+[1.524s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.525s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.526s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.527s]   has been installed.
+[1.528s] 
+[1.531s] [0m
+[1.532s] -- Configuring incomplete, errors occurred!
+[1.533s] See also "/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/CMakeFiles/CMakeOutput.log".
+[1.533s] Invoked command in '/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces' returned '1': /usr/bin/cmake /home/colin/LunaboticsBurm/ros2_ws_dev/src/custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/colin/LunaboticsBurm/ros2_ws_dev/install/custom_interfaces
