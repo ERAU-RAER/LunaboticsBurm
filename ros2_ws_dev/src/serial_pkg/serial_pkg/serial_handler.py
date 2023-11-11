@@ -13,7 +13,7 @@ class SerialHandler(Node):
         # Open serial ports
         self.ser1 = serial.Serial('/dev/ttyACM0')  
 
-        timer_period  = 1 #s
+        timer_period  = .5 #s
         self.timer = self.create_timer(timer_period,self.timer_callback)
         self.i = 0
 
@@ -22,6 +22,7 @@ class SerialHandler(Node):
         msg.identifier = 'test'
         #msg.data = self.i.to_bytes(2,'big')
         msg.data = self.ser1.readline()
+        msg.data = msg.data[:-2]
         print(msg.data)
         self.publisher_.publish(msg)
         #self.get_logger().info('Publishing: %s' % msg.data.decode("utf-8"))
