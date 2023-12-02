@@ -1,7 +1,7 @@
-const int ENL = 7;
-const int ENR = 8;
+const int ENR = 7;
+const int ENL = 8;
 // byte msgOut[10]; //use me later
-
+ 
 //Prototypes
 void msgParse();
 
