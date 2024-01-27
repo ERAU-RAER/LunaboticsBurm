@@ -1,5 +1,5 @@
 # Lunabotics Code Repository
 
 ## Dependencies:
-- ros-humble-teleop-twist-joy
+-sudo apt install ros-humble-teleop-twist-joy
 
