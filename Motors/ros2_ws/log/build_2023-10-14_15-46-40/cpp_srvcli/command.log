@@ -1,6 +1,0 @@
-Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli
-Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/jake_161/Lunabotics/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/jake_161/Lunabotics/ros2_ws/install/cpp_srvcli
-Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli -- -j8 -l8
-Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli -- -j8 -l8
-Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli
-Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/cpp_srvcli

@@ -1,4 +1,0 @@
-Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/turtlesim -- -j8 -l8
-Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/jake_161/Lunabotics/ros2_ws/build/turtlesim -- -j8 -l8
-Invoking command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/turtlesim
-Invoked command in '/home/jake_161/Lunabotics/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/jake_161/Lunabotics/ros2_ws/build/turtlesim

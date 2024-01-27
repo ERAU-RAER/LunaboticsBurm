@@ -1,8 +1,0 @@
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
-/home/jake_161/Lunabotics/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl
