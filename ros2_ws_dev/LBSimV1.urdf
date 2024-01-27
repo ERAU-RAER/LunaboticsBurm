@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot name="LBSimV1">
+    <link name="Chassis">
+        <visual>
+            <geometry>
+                <box length="0.6" radius="0.2"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="WheelFL">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="WheelFR">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="WheelRL">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="WheelRR">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+        </visual>
+    </link>
+</robot>
