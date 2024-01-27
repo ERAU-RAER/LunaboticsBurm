@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot name="LBSimV1">
-    <link name="Chassis">
+    <link name="base_link">
         <visual>
             <geometry>
-                <box length="0.6" radius="0.2"/>
+                <mesh "/meshes/chassis.dae"/>
             </geometry>
         </visual>
     </link>
