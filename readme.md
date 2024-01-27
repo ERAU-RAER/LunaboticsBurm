@@ -1,11 +1,5 @@
 # Lunabotics Code Repository
 
-- Controller Input:
+## Dependencies:
+- ros-humble-teleop-twist-joy
 
-- Serial Communication:
-
-- Motors:
-
-- Lidar:
-
-- Actuators:
