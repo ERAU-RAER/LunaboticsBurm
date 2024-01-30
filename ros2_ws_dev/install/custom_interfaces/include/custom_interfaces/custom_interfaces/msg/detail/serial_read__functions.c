@@ -29,7 +29,7 @@ custom_interfaces__msg__SerialRead__init(custom_interfaces__msg__SerialRead * ms
     return false;
   }
   // data
-  if (!rosidl_runtime_c__uint8__Sequence__init(&msg->data, 0)) {
+  if (!rosidl_runtime_c__octet__Sequence__init(&msg->data, 0)) {
     custom_interfaces__msg__SerialRead__fini(msg);
     return false;
   }
@@ -45,7 +45,7 @@ custom_interfaces__msg__SerialRead__fini(custom_interfaces__msg__SerialRead * ms
   // identifier
   rosidl_runtime_c__String__fini(&msg->identifier);
   // data
-  rosidl_runtime_c__uint8__Sequence__fini(&msg->data);
+  rosidl_runtime_c__octet__Sequence__fini(&msg->data);
 }
 
 bool
@@ -61,7 +61,7 @@ custom_interfaces__msg__SerialRead__are_equal(const custom_interfaces__msg__Seri
     return false;
   }
   // data
-  if (!rosidl_runtime_c__uint8__Sequence__are_equal(
+  if (!rosidl_runtime_c__octet__Sequence__are_equal(
       &(lhs->data), &(rhs->data)))
   {
     return false;
@@ -84,7 +84,7 @@ custom_interfaces__msg__SerialRead__copy(
     return false;
   }
   // data
-  if (!rosidl_runtime_c__uint8__Sequence__copy(
+  if (!rosidl_runtime_c__octet__Sequence__copy(
       &(input->data), &(output->data)))
   {
     return false;

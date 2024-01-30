@@ -9,7 +9,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
-#include "custom_interfaces/msg/detail/serial_read__functions.h"
 #include "custom_interfaces/msg/detail/serial_read__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -40,46 +39,46 @@ void SerialRead_fini_function(void * message_memory)
 
 size_t size_function__SerialRead__data(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<uint8_t> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<unsigned char> *>(untyped_member);
   return member->size();
 }
 
 const void * get_const_function__SerialRead__data(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<uint8_t> *>(untyped_member);
+    *reinterpret_cast<const std::vector<unsigned char> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__SerialRead__data(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<uint8_t> *>(untyped_member);
+    *reinterpret_cast<std::vector<unsigned char> *>(untyped_member);
   return &member[index];
 }
 
 void fetch_function__SerialRead__data(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const auto & item = *reinterpret_cast<const uint8_t *>(
+  const auto & item = *reinterpret_cast<const unsigned char *>(
     get_const_function__SerialRead__data(untyped_member, index));
-  auto & value = *reinterpret_cast<uint8_t *>(untyped_value);
+  auto & value = *reinterpret_cast<unsigned char *>(untyped_value);
   value = item;
 }
 
 void assign_function__SerialRead__data(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  auto & item = *reinterpret_cast<uint8_t *>(
+  auto & item = *reinterpret_cast<unsigned char *>(
     get_function__SerialRead__data(untyped_member, index));
-  const auto & value = *reinterpret_cast<const uint8_t *>(untyped_value);
+  const auto & value = *reinterpret_cast<const unsigned char *>(untyped_value);
   item = value;
 }
 
 void resize_function__SerialRead__data(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<uint8_t> *>(untyped_member);
+    reinterpret_cast<std::vector<unsigned char> *>(untyped_member);
   member->resize(size);
 }
 
@@ -103,7 +102,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SerialRead_me
   },
   {
     "data",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_OCTET,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
@@ -134,9 +133,6 @@ static const rosidl_message_type_support_t SerialRead_message_type_support_handl
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &SerialRead_message_members,
   get_message_typesupport_handle_function,
-  &custom_interfaces__msg__SerialRead__get_type_hash,
-  &custom_interfaces__msg__SerialRead__get_type_description,
-  &custom_interfaces__msg__SerialRead__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

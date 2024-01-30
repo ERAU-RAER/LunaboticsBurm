@@ -1,1 +1,14 @@
-/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/SerialRead.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/SerialRead.msg
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module msg {
+    struct SerialRead {
+      string identifier;
+
+      sequence<octet> data;
+    };
+  };
+};

@@ -1,1 +1,2 @@
-/home/colin/LunaboticsBurm/ros2_ws_dev/src/custom_interfaces/msg/SerialRead.msg
+string identifier
+byte[] data
