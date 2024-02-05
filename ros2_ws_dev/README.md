@@ -29,10 +29,9 @@ We need to get the teleop-twist-joy package working with it.
 I believe it's probably some topic remapping shenanigans.
 
 ### TODO:
-1. [ ] Figure out what args make it work
-	From what I've found:
+1. [ ] Figure out what args make it work\
+	*From what I've found:*\
 	Twist Messages are strcutured in the format: "linear: {x: #,y: #,z: #}
-
-2. [ ] Create a launch file to do it fast
-3. [ ] Merge into URDF
-4. [ ] Integrarte URDF into launch file
+3. [ ] Create a launch file to do it fast
+4. [ ] Merge into URDF
+5. [ ] Integrarte URDF into launch file
