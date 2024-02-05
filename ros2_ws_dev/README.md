@@ -1,6 +1,10 @@
 # Recreate the current setup:
 [Humble Doc](https://docs.ros.org/en/humble/Tutorials/Advanced/Simulators/Gazebo/Gazebo.html)
 
+### Useful Links:
+[Twist Message Doc (Matlab)](https://www.mathworks.com/help/ros/ug/work-with-basic-ros-2-messages.htmls)
+[Unicycle Robot Example](https://medium.com/hackernoon/unicycle-to-differential-drive-courseras-control-of-mobile-robots-with-ros-and-rosbots-part-2-6d27d15f2010)
+
 ## Quick Start Commands:
 
 *Run these in different terminals*
