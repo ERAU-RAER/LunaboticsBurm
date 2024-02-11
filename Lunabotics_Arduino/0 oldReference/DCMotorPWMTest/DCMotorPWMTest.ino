@@ -1,3 +1,5 @@
+# THIS IS FOR STEPPER MOTORS
+
 #include <AVR_PWM.h>
 
 int PWM_Pin = 11;
