@@ -9,11 +9,10 @@ DD_Kinematics::DD_Kinematics(int motor_max_rpm, float wheel_diameter, float whee
 {
 }
 
-DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float linear_y, float angular_z)
+DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float angular_z)
 {
     //convert m/s to m/min
     linear_vel_x_mins_ = linear_x * 60;
-    linear_vel_y_mins_ = linear_y * 60;
 
     //convert rad/s to rad/min
     angular_vel_z_mins_ = angular_z * 60;
@@ -22,25 +21,24 @@ DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float linear_y, floa
     tangential_vel_ = angular_vel_z_mins_ * wheel_dist_;
 
     x_rpm_ = linear_vel_x_mins_ / circumference_;
-    y_rpm_ = linear_vel_y_mins_ / circumference_;
     tan_rpm_ = tangential_vel_ / circumference_;
 
     DD_Kinematics::output rpm;
 
-    rpm.motor1 = x_rpm_ - y_rpm_ - tan_rpm_;
-    rpm.motor2 = x_rpm_ + y_rpm_ + tan_rpm_;
+    rpm.motor1 = x_rpm_ - tan_rpm_;
+    rpm.motor2 = x_rpm_ + tan_rpm_;
 
     return rpm;
 }
 
-DD_Kinematics::output DD_Kinematics::getPWM(float linear_x, float linear_y, float angular_z)
+DD_Kinematics::output DD_Kinematics::getPWM(float linear_x, float angular_z)
 {
 
     DD_Kinematics::output rpm;
     DD_Kinematics::output pwm;
 
     //Initialize rpm for RPMtoPWM
-    rpm = getRPM(linear_x, linear_y, angular_z);
+    rpm = getRPM(linear_x, angular_z);
 
     //convert from RPM to PWM for both wheels
     pwm.motor1 = RPMtoPWM(rpm.motor1);

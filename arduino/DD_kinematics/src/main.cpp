@@ -32,8 +32,6 @@ void setup()
   // Initialize Enable pins as outputs
   pinMode(en_1, OUTPUT);
   pinMode(en_2, OUTPUT);
-
-
 } 
 
 void loop()
@@ -42,13 +40,12 @@ void loop()
   DD_Kinematics::output rpm;
   DD_Kinematics::output pwm;
 
-  //Hardcode some velocities and angular velocity to test, all in m/s
+  //Hardcode velocity and angular velocity to test, in m/s and rad/s
   float linear_vel_x = 1;
-  float linear_vel_y = 0;
   float ang_vel_z = 2;
 
   //find required rpm for each motor to obtain the desired values
-  rpm = DD_Kinematics.getRPM(linear_vel_x, linear_vel_y, ang_vel_z);
+  rpm = DD_Kinematics.getRPM(linear_vel_x, ang_vel_z);
 
   Serial.print("Left Motors: ");
   Serial.print(rpm.motor1);
@@ -96,7 +93,7 @@ void loop()
   }
 
   // Initalize getPWM so that pwm.motor(n) will work
-  pwm = DD_Kinematics.getPWM(linear_vel_x, linear_vel_y, ang_vel_z);
+  pwm = DD_Kinematics.getPWM(linear_vel_x, ang_vel_z);
 
   analogWrite(motor1_pin, pwm.motor1);
   analogWrite(motor2_pin, pwm.motor2);
