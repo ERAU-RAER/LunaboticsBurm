@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>serial_pkg</name>
+  <name>my_serial_package</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="ehrhardtcolin@gmail.com">colin</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Quick and dirty serial test for arduino</description>
+  <maintainer email="jacob.browning161@gmail.com">jake_161</maintainer>
+  <license>Apache License 2.0</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -14,6 +14,5 @@
 
   <export>
     <build_type>ament_python</build_type>
-    <depend>rclpy</depend>
   </export>
 </package>

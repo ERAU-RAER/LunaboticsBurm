@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'serial_pkg'
+package_name = 'my_serial_package'
 
 setup(
     name=package_name,
@@ -13,15 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='colin',
-    maintainer_email='ehrhardtcolin@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='jake_161',
+    maintainer_email='jacob.browning161@gmail.com',
+    description='Quick and dirty serial test for arduino',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'serial_handler = serial_pkg.serial_handler:main',
-            'serial_listener = serial_pkg.serial_listener:main',
+            'my_serial_node = my_serial_package.my_serial_node:main'
         ],
     },
 )
