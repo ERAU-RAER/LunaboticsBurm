@@ -3,5 +3,6 @@
   <!--Current issue with above line is that keyboard input can't be accepted from a node run via launch file-->
   <node pkg="my_serial_package" exec="my_serial_node" name="my_serial_node">
     <param name="serial_port" value="/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75834303438351111041-if00"/>
+    <param name="baud_rate" value="9600"/>
   </node>
 </launch>

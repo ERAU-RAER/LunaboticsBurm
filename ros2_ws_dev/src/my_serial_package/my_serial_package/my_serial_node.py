@@ -6,12 +6,16 @@ import serial
 class SerialNode(Node):
     def __init__(self):
         super().__init__('serial_node')
+
         self.declare_parameter('serial_port', '/dev/ttyUSB0')
         self.serial_port = self.get_parameter('serial_port').value
 
+        self.declare_parameter('baud_rate', 9600)
+        self.baud_rate = self.get_parameter('baud_rate').value
+
         # Serial port configuration
         port = self.serial_port  # Change this to your port
-        baudrate = 9600  # Adjust baudrate as needed
+        baudrate = self.baud_rate  # Adjust baudrate as needed
         
         try:
             self.serial_port = serial.Serial(port, baudrate)
