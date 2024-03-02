@@ -1,8 +1,7 @@
 <launch>
-  <node pkg="turtlesim" exec="turtlesim_node" name="sim" namespace="turtlesim1"/>
-  <node pkg="turtlesim" exec="turtlesim_node" name="sim" namespace="turtlesim2"/>
-  <node pkg="turtlesim" exec="mimic" name="mimic">
-    <remap from="/input/pose" to="/turtlesim1/turtle1/pose"/>
-    <remap from="/output/cmd_vel" to="/turtlesim2/turtle1/cmd_vel"/>
+  <!--node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" name="teleop_twist_keyboard"/-->
+  <!--Current issue with above line is that keyboard input can't be accepted from a node run via launch file-->
+  <node pkg="my_serial_package" exec="my_serial_node" name="my_serial_node">
+    <param name="serial_port" value="/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75834303438351111041-if00"/>
   </node>
 </launch>

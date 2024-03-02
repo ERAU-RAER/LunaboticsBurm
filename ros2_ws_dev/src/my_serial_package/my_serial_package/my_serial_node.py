@@ -6,9 +6,11 @@ import serial
 class SerialNode(Node):
     def __init__(self):
         super().__init__('serial_node')
-        
+        self.declare_parameter('serial_port', '/dev/ttyUSB0')
+        self.serial_port = self.get_parameter('serial_port').value
+
         # Serial port configuration
-        port = '/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_7513030373535121E072-if00'  # Change this to your port
+        port = self.serial_port  # Change this to your port
         baudrate = 9600  # Adjust baudrate as needed
         
         try:
