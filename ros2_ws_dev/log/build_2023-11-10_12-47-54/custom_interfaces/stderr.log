@@ -1,4 +1,0 @@
-failed to create symbolic link '/home/colin/LunaboticsBurm/ros2_ws_dev/build/custom_interfaces/ament_cmake_python/custom_interfaces/custom_interfaces' because existing path cannot be removed: Is a directory
-gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_custom_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_custom_interfaces] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:452: CMakeFiles/ament_cmake_python_symlink_custom_interfaces.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
