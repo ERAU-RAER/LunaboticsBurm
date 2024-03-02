@@ -47,6 +47,24 @@ void loop()
   //find required rpm for each motor to obtain the desired values
   rpm = DD_Kinematics.getRPM(linear_vel_x, ang_vel_z);
 
+  //Disable motor 1 if RPM is zero
+ if (rpm.motor1 == 0) {
+    digitalWrite(en_1, LOW);
+  }
+  else {
+    // Enable motor 1 if RPM is not zero
+    digitalWrite(en_1, HIGH);
+  }
+
+  // Disable motor 2 if RPM is zero
+  if (rpm.motor2 == 0) {
+    digitalWrite(en_2, LOW);
+  }
+  else {
+    // Enable motor 2 if RPM is not zero
+    digitalWrite(en_2, HIGH);
+  }
+
   Serial.print("Left Motors: ");
   Serial.print(rpm.motor1);
   Serial.print(" rpm");
