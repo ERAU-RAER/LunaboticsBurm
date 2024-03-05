@@ -3,12 +3,13 @@
 ros2_ws_dev
 ├── launch
 │   └── teleop_twist_arduino_launch.xml <-- Put Configs/Parameters here
+│
 └── src
     └── arduino_serial_package
-		│
+	│
         ├── arduino_files
         │   └── arduino_serial_bridge <-- Contains Platform.io project with Arduino .cpp files
-		│
+	│
         └── arduino_serial_package
             └── arduino_serial_bridge.py <-- Source code for ROS2 node
 ```
