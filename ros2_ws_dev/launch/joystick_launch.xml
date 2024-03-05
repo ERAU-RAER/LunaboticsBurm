@@ -1,9 +1,0 @@
-<launch>
-  <!--node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" name="teleop_twist_keyboard"/-->
-  <!--Current issue with above line is that keyboard input can't be accepted from a node run via launch file-->
-  <node pkg="my_serial_package" exec="my_serial_node" name="my_serial_node">
-    <param name="serial_port" value="/dev/ttyACM0"/>
-    <param name="baud_rate" value="9600"/>
-    <!--remap from="/serialmsg" to="/cmd_vel"/-->
-  </node>
-</launch>

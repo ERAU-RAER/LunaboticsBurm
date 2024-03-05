@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'my_serial_package'
+package_name = 'arduino_serial_package'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_serial_node = my_serial_package.my_serial_node:main'
+            'arduino_serial_bridge = arduino_serial_package.arduino_serial_bridge:main'
         ],
     },
 )

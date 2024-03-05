@@ -11,7 +11,7 @@ class SerialNode(Node):
         super().__init__('serial_node')
 
         # Retrieve parameters
-        self.declare_parameter('serial_port', '/dev/ttyUSB0')
+        self.declare_parameter('serial_port', '/dev/ttyACM0')
         self.serial_port = self.get_parameter('serial_port').value
 
         self.declare_parameter('baud_rate', 9600)
@@ -36,7 +36,7 @@ class SerialNode(Node):
             10)
         
         # Publisher for received serial messages
-        self.serial_pub = self.create_publisher(String, '/serialrec', 10)
+        self.serial_pub = self.create_publisher(String, '/arduino_chatter', 10)
 
     def cmd_vel_callback(self, msg):
         if self.serial_port.is_open:
@@ -54,7 +54,7 @@ class SerialNode(Node):
             
             # Send command over serial
             self.serial_port.write(cmd_str.encode())
-            self.get_logger().info(f"Sent command over serial: {cmd_str}")
+            self.get_logger().info(f"Sending: {cmd_str}")
         else:
             self.get_logger().error("Serial port is not open")
 
@@ -64,7 +64,8 @@ class SerialNode(Node):
                 # Read serial message
                 serial_msg = self.serial_port.readline().decode().strip()
                 # self.get_logger().info(f"Received serial message: {serial_msg}")
-                
+                # This is kinda unreadable when using the log^ Just echo the topic instead
+
                 # Publish the received serial message
                 msg = String()
                 msg.data = serial_msg
