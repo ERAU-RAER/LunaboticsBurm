@@ -42,10 +42,14 @@ class SerialNode(Node):
         if self.serial_port.is_open:
             # Extract linear and angular velocities
             linear_x = msg.linear.x
+            linear_y = msg.linear.y
+            linear_z = msg.linear.z
+            angular_x = msg.angular.x
+            angular_y = msg.angular.y
             angular_z = msg.angular.z
             
             # Format velocities as string
-            cmd_str = f"Linear: {linear_x}, Angular: {angular_z}"
+            cmd_str = f"{linear_x},{linear_y},{linear_z},{angular_x},{angular_y},{angular_z}"
             cmd_str += "/"
             
             # Send command over serial
@@ -59,7 +63,7 @@ class SerialNode(Node):
             try:
                 # Read serial message
                 serial_msg = self.serial_port.readline().decode().strip()
-                self.get_logger().info(f"Received serial message: {serial_msg}")
+                # self.get_logger().info(f"Received serial message: {serial_msg}")
                 
                 # Publish the received serial message
                 msg = String()
