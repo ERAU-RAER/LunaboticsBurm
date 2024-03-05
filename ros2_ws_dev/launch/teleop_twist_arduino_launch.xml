@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="arduino_serial_package" exec="arduino_serial_bridge" name="arduino_serial_bridge">
+    <param name="serial_port" value="/dev/ttyACM0"/> <!--Set Serial Port Here-->
+    <param name="baud_rate" value="9600"/> <!--Set Baudrate Here-->
+  </node>
+</launch>
