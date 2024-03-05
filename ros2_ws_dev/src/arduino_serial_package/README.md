@@ -34,3 +34,10 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 ros2 topic echo /arduino_chatter
 ```
+
+# Known Issues
+- Sometimes the port stops working properly resulting in malformed data. Restarting your computer fixes it.
+- If the default port doesn't work, run the following command and paste the output into the launch file:
+  ```
+  ls /dev/serial/by-id/*
+  ```
