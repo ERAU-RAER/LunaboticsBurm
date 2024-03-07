@@ -16,6 +16,7 @@ void parseTwist(const String &msg); // Handles pulling the data from the serial 
 void processTwist(const Twist &twist); // Prints out a return message as a bit of a sanity check
 
 String command = "";
+Twist previousTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 void setup()
 {
@@ -70,20 +71,31 @@ void parseTwist(const String &msg)
 
 void processTwist(const Twist &twist) // Make sure your custom function takes the Twist struct as a parameter
 {
-    // Print the velocities
-    Serial.println("linear:");
-    Serial.print("  x: ");
-    Serial.println(twist.linear_x);
-    Serial.print("  y: ");
-    Serial.println(twist.linear_y);
-    Serial.print("  z: ");
-    Serial.println(twist.linear_z);
+    // Check if any of the velocities have changed
+    if (twist.linear_x != previousTwist.linear_x ||
+        twist.linear_y != previousTwist.linear_y ||
+        twist.linear_z != previousTwist.linear_z ||
+        twist.angular_x != previousTwist.angular_x ||
+        twist.angular_y != previousTwist.angular_y ||
+        twist.angular_z != previousTwist.angular_z)
+    {
+        // Print the velocities
+        Serial.println("linear:");
+        Serial.print("  x: ");
+        Serial.println(twist.linear_x);
+        Serial.print("  y: ");
+        Serial.println(twist.linear_y);
+        Serial.print("  z: ");
+        Serial.println(twist.linear_z);
 
-    Serial.println("angular:");
-    Serial.print("  x: ");
-    Serial.println(twist.angular_x);
-    Serial.print("  y: ");
-    Serial.println(twist.angular_y);
-    Serial.print("  z: ");
-    Serial.println(twist.angular_z);
+        Serial.println("angular:");
+        Serial.print("  x: ");
+        Serial.println(twist.angular_x);
+        Serial.print("  y: ");
+        Serial.println(twist.angular_y);
+        Serial.print("  z: ");
+        Serial.println(twist.angular_z);
+
+        previousTwist = twist;
+    }
 }
