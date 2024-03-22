@@ -1,6 +1,5 @@
 #include "Arduino.h"
 #include "DD_Kinematics.h"
-
 DD_Kinematics::DD_Kinematics(int motor_max_rpm, float wheel_diameter, float wheel_dist, int pwm_bits):
     circumference_(PI * wheel_diameter),
     max_rpm_(motor_max_rpm),

@@ -1,8 +1,10 @@
 #include <Arduino.h>
 #include <DD_Kinematics.h>
 
+// ARDUINO NEEDS AN EXTERNAL GROUND, USB GROUND IS TOO DIRTY
+// Needs power supplies, voltage is lacking when on usb
 // Set information for DD_Kinematics
-#define MOTOR_MAX_RPM 100       // motor's maximum rpm
+#define MOTOR_MAX_RPM 20       // motor's maximum rpm
 #define WHEEL_DIAMETER 0.5      // robot's wheel diameter expressed in meters
 #define WHEEL_DIST 0.6          // distance between the front and back wheels
 #define PWM_BITS 8              // microcontroller's PWM pin resolution. Arduino Mega 2560 is using 8 bits (0-255)
@@ -15,7 +17,7 @@ int dir2_pin = 5;
 int en_1 = 6;
 int en_2 = 7;
 
-DD_Kinematics DD_Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, WHEEL_DIST, PWM_BITS);
+DD_Kinematics Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, WHEEL_DIST, PWM_BITS);
 
 void setup() 
 {
@@ -41,11 +43,11 @@ void loop()
   DD_Kinematics::output pwm;
 
   //Hardcode velocity and angular velocity to test, in m/s and rad/s
-  float linear_vel_x = 1;
+  float linear_vel_x = 2;
   float ang_vel_z = 2;
 
   //find required rpm for each motor to obtain the desired values
-  rpm = DD_Kinematics.getRPM(linear_vel_x, ang_vel_z);
+  rpm = Kinematics.getRPM(linear_vel_x, ang_vel_z);
 
   Serial.print("Left Motors: ");
   Serial.print(rpm.motor1);
@@ -64,7 +66,7 @@ void loop()
 
   DD_Kinematics::velocities vel;
 
-  vel = DD_Kinematics.getVelocities(motor1_feedback, motor2_feedback);
+  vel = Kinematics.getVelocities(motor1_feedback, motor2_feedback);
 
   Serial.print("\nVelocity in X: ");
   Serial.print(vel.linear_x, 2);
@@ -93,10 +95,13 @@ void loop()
   }
 
   // Initalize getPWM so that pwm.motor(n) will work
-  pwm = DD_Kinematics.getPWM(linear_vel_x, ang_vel_z);
+  pwm = Kinematics.getPWM(linear_vel_x, ang_vel_z);
 
-  analogWrite(motor1_pin, pwm.motor1);
-  analogWrite(motor2_pin, pwm.motor2);
+  analogWrite(motor1_pin, abs(pwm.motor1));//pwm.motor1);
+  analogWrite(motor2_pin, abs(pwm.motor2));//pwm.motor2);
 
-  delay(100000);
+  //debugging
+  Serial.println(pwm.motor1);
+  Serial.println(pwm.motor2);
+  delay(1000);
 }
