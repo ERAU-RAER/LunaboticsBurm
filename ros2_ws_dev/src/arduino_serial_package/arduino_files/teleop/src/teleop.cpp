@@ -14,10 +14,10 @@
 // Define pin variables
 int motor1_pin = 11;
 int motor2_pin = 10;
-int dir1_pin = 4;
-int dir2_pin = 5;
-int stp_1 = 6;
-int stp_2 = 7;
+// int dir1_pin = 4;
+// int dir2_pin = 5;
+// int stp_1 = 6;
+// int stp_2 = 7;
 
 DD_Kinematics Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, WHEEL_DIST, PWM_BITS);
 
@@ -109,12 +109,12 @@ void loop()
   //   // Enable motor 2 if RPM is not zero
   //   digitalWrite(stp_2, HIGH);
   // }
-  int motor1_feedback = rpm.motor1;
-  int motor2_feedback = rpm.motor2;
+  // int motor1_feedback = rpm.motor1;
+  // int motor2_feedback = rpm.motor2;
 
-  DD_Kinematics::velocities vel;
+  // DD_Kinematics::velocities vel;
 
-  vel = Kinematics.getVelocities(motor1_feedback, motor2_feedback);
+  // vel = Kinematics.getVelocities(motor1_feedback, motor2_feedback);
 
   // Serial.print("\nVelocity in X: ");
   // Serial.print(vel.linear_x, 2);
