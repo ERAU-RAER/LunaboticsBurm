@@ -1,5 +1,7 @@
 #include <Arduino.h>
 
+bool debug = true;
+
 struct Twist // This creates a format for storing the velocity data, easily accessible as variables later on in your code
 {
     float linear_x;
@@ -11,13 +13,13 @@ struct Twist // This creates a format for storing the velocity data, easily acce
 };
 
 // Prototypes
-void parseTwist(const String &msg); // Handles pulling the data from the serial message
+Twist parseTwistandReturn(const String &msg); // Handles pulling the data from the serial message
 
 void processTwist(const Twist &twist); // Prints out a return message as a bit of a sanity check
 
 String command = "";
 Twist previousTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-
+Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 void setup()
 {
     Serial.begin(9600); // Make sure this matches the launch file on the ros2 side of things
@@ -32,7 +34,7 @@ void loop()
         if (incomingChar == '/') // Delimiter, check if it's the end of the message
         {
             // Process the received command
-            parseTwist(command);
+            daTwist=parseTwistandReturn(command);
 
             // Reset the command string for the next message
             command = "";
@@ -45,7 +47,7 @@ void loop()
     }
 }
 
-void parseTwist(const String &msg)
+Twist parseTwistandReturn(const String &msg)
 {
     Twist twist; // Instantiate a new variable "twist" of type Twist (The custom structure from above)
     int index = 0;
@@ -66,7 +68,12 @@ void parseTwist(const String &msg)
     twist.angular_z = msg.substring(index).toFloat();
 
     // Process the Twist message
-    processTwist(twist); // Replace this with whatever custom functions you would want to run for your arduino script, pass the struct to your custom function
+    if (debug)
+    {
+        processTwist(twist); // Replace this with whatever custom functions you would want to run for your arduino script, pass the struct to your custom function
+    }
+
+    return twist; //RETURN THE TWWIIIIST
 }
 
 void processTwist(const Twist &twist) // Make sure your custom function takes the Twist struct as a parameter
