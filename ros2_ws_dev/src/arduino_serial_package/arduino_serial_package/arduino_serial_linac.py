@@ -6,12 +6,12 @@ import serial
 import threading
 
 
-class SerialNode(Node):
+class SerialLinacNode(Node):
     def __init__(self):
-        super().__init__('serial_node')
+        super().__init__('serial_linac_node')
 
         # Retrieve parameters
-        self.declare_parameter('serial_port', '/dev/ttyACM0')
+        self.declare_parameter('serial_port', '/dev/ttyACM1')
         self.serial_port = self.get_parameter('serial_port').value
 
         self.declare_parameter('baud_rate', 9600)
@@ -80,18 +80,18 @@ class SerialNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    serial_node = SerialNode()
+    serial_linac_node = SerialLinacNode()
     
     # Start a separate thread to continuously read serial messages
-    serial_thread = threading.Thread(target=serial_node.read_serial)
+    serial_thread = threading.Thread(target=serial_linac_node.read_serial)
     serial_thread.start()
     
     try:
-        rclpy.spin(serial_node)
+        rclpy.spin(serial_linac_node)
     except KeyboardInterrupt:
         pass
     
-    serial_node.destroy_node()
+    serial_linac_node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':

@@ -4,7 +4,7 @@ package_name = 'arduino_serial_package'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.1.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -15,12 +15,13 @@ setup(
     zip_safe=True,
     maintainer='jake_161',
     maintainer_email='jacob.browning161@gmail.com',
-    description='Quick and dirty serial test for arduino',
+    description='Lunabotics Drivetrain and Linac Arduino Serial Bridge',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'arduino_serial_bridge = arduino_serial_package.arduino_serial_bridge:main'
+            'arduino_serial_drivetrain = arduino_serial_package.arduino_serial_drivetrain:main',
+            'arduino_serial_linac = arduino_serial_package.arduino_serial_linac:main'
         ],
     },
 )
