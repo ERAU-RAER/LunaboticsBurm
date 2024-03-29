@@ -14,6 +14,14 @@ ros2_ws_dev
             └── arduino_serial_bridge.py <-- Source code for ROS2 node
 ```
 *This needs review^*
+*Make ROSDEP work*
+
+# Weird dependencies and setup:
+1. Python pySerial package
+2. Python thread6 package
+3. Add serial permissions to linux user:
+  sudo usermod -a -G dialout <username>  # To allow access to the /dev/ttyUSB#
+
 # Terminal Setup
 
 *Connect Arduino to computer before starting node*
