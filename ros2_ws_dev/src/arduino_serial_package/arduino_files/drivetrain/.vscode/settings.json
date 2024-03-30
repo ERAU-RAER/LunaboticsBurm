@@ -1,15 +1,9 @@
 {
     "python.autoComplete.extraPaths": [
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/serialPLZ/lib/python3.10/site-packages",
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/my_serial_package/lib/python3.10/site-packages",
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/arduino_serial_package/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "python.analysis.extraPaths": [
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/serialPLZ/lib/python3.10/site-packages",
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/my_serial_package/lib/python3.10/site-packages",
-        "/home/jake_161/GitRepos/LunaboticsBurm/ros2_ws_dev/install/arduino_serial_package/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ]
