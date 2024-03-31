@@ -3,10 +3,10 @@
 #include "Twist-Decoder.hpp"
 // Encoder Variables //
 
-const int forwardPin_top = 4;    // First pin for moving forward
-const int backwardPin_top = 5;   // First pin for moving backward
-const int forwardPin_bottom = 6;    // First pin for moving forward
-const int backwardPin_bottom = 7;   // First pin for moving backward
+#define forwardPin_top = 43;    // First pin for moving forward
+#define backwardPin_top = 45;   // First pin for moving backward
+#define forwardPin_bottom = 47;    // First pin for moving forward
+#define backwardPin_bottom = 49;   // First pin for moving backward
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
