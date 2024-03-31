@@ -1,7 +1,7 @@
 /.vscode
-/ros2_ws_dev/build
-/ros2_ws_dev/install
-/ros2_ws_dev/log
-/ros2_ws_dev/.vscode
-/ros2_ws_dev/src/arduino_serial_package/arduino_files/arduino_serial_bridge/.pio
-/ros2_ws_dev/src/arduino_serial_package/arduino_files/arduino_serial_bridge/.vscode
+/build
+/install
+/log
+/src/arduino_serial_package/arduino_files/arduino_serial_bridge/.pio
+/src/arduino_serial_package/arduino_files/arduino_serial_bridge/.vscode
+/teleop.code-workspace
