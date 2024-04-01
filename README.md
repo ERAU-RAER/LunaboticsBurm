@@ -8,6 +8,7 @@ This repo houses the ROS2 - Humble workspace for our submission in the 2024 NASA
 The source code of the project follows this structure:
 
 ```
+LunaboticsBurm                                   <--- Root of the ROS2 Workspace
 ├── launch
 │   └── teleop_arduino_launch.xml                <--- ROS2 launch files with custom parameters
 └── src
