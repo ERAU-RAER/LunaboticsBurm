@@ -13,7 +13,7 @@ LunaboticsBurm                                   <--- Root of the ROS2 Workspace
 │   └── teleop_arduino_launch.xml                <--- ROS2 launch files with custom parameters
 └── src
     └── arduino_serial_package
-        ├── arduino_files                        <--- Companion source code to be deployed on microcrontrollers
+        ├── arduino_files                        <--- Microcontroller companion code
         │   ├── drivetrain                       <--- Platform.io project parent directory
         │   │   ├── include
         │   │   ├── lib
