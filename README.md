@@ -32,8 +32,8 @@ LunaboticsBurm                                   <--- Root of the ROS2 Workspace
         │       └── src
         │           └── linac.cpp
         └── arduino_serial_package
-            ├── arduino_serial_drivetrain.py      <--- ROS2 Node
-            └── arduino_serial_linac.py           <--- ROS2 Node
+            ├── arduino_serial_drivetrain.py     <--- ROS2 Node
+            └── arduino_serial_linac.py          <--- ROS2 Node
 ```
 
 ## Code Overview
