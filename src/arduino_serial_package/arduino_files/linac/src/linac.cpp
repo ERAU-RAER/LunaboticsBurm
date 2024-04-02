@@ -3,10 +3,10 @@
 #include "Twist-Decoder.hpp"
 // Encoder Variables //
 
-#define forwardPin_top = 43;    // First pin for moving forward
-#define backwardPin_top = 45;   // First pin for moving backward
-#define forwardPin_bottom = 47;    // First pin for moving forward
-#define backwardPin_bottom = 49;   // First pin for moving backward
+#define forwardPin_top 43       // First pin for moving forward
+#define backwardPin_top 45      // First pin for moving backward
+#define forwardPin_bottom 6    // First pin for moving forward
+#define backwardPin_bottom 7   // First pin for moving backward
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -65,7 +65,7 @@ void loop() {
       if (incomingChar == '/') // Delimiter, check if it's the end of the message
       {
         // Process the received command
-        Twist daTwist = parseTwist(command);
+        daTwist = parseTwist(command);
 
         // Reset the command string for the next message
         command = "";
