@@ -3,10 +3,10 @@
 #include "Twist-Decoder.hpp"
 // Encoder Variables //
 
-#define forwardPin_top 43       // First pin for moving forward
-#define backwardPin_top 45      // First pin for moving backward
-#define forwardPin_bottom 6    // First pin for moving forward
-#define backwardPin_bottom 7   // First pin for moving backward
+#define forwardPin_top 43    // First pin for moving forward
+#define backwardPin_top 45   // First pin for moving backward
+#define forwardPin_bottom 6  // First pin for moving forward
+#define backwardPin_bottom 7 // First pin for moving backward
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -31,19 +31,19 @@ Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 // int encoderPeriod = 250;  // Period for publishing encoder
 
 void setup() {
-  Serial.begin(9600);  // Initialize serial communication at 9600 baud rate
+  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
 
   // Set Actuator pins to output
   pinMode(forwardPin_top, OUTPUT);
   pinMode(backwardPin_top, OUTPUT);
-  pinMode(forwardPin_bottom,OUTPUT);
-  pinMode(backwardPin_bottom,OUTPUT);
-  
+  pinMode(forwardPin_bottom, OUTPUT);
+  pinMode(backwardPin_bottom, OUTPUT);
+
   // Set encoder pins to input pullup
   // pinMode(hallPinA, INPUT_PULLUP);
   // pinMode(hallPinB, INPUT_PULLUP);
   // pinMode(hallPinC, INPUT_PULLUP);
-  // pinMode(hallPinD, INPUT_PULLUP);  
+  // pinMode(hallPinD, INPUT_PULLUP);
 
   // Set up interrupts for encoder
   // attachInterrupt(digitalPinToInterrupt(hallPinA), updateLinAccPos, CHANGE);
@@ -58,60 +58,57 @@ void setup() {
 void loop() {
   // Check if serial data is available
   if (Serial.available()) {
-     while (Serial.available() > 0) // Check if any characters are available
+    while (Serial.available() > 0) // Check if any characters are available
     {
       char incomingChar = Serial.read(); // Read the incoming character
 
-      if (incomingChar == '/') // Delimiter, check if it's the end of the message
+      if (incomingChar ==
+          '/') // Delimiter, check if it's the end of the message
       {
         // Process the received command
         daTwist = parseTwist(command);
 
         // Reset the command string for the next message
         command = "";
-      }
-      else
-      {
+      } else {
         // Append the character to the command string
         command += incomingChar;
       }
     }
 
-    if(daTwist.linear_z == 0.0) {
-      //Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
+    if (daTwist.linear_z == 0.0) {
+      // Note: AlternatePin must be set to LOW before setting the other pin to
+      // HIGH! Both pins can never both be high
       digitalWrite(backwardPin_bottom, LOW);
       digitalWrite(forwardPin_bottom, LOW);
-    }
-    else if(daTwist.linear_z > 0.0) {
-      //Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
+    } else if (daTwist.linear_z > 0.0) {
+      // Note: AlternatePin must be set to LOW before setting the other pin to
+      // HIGH! Both pins can never both be high
       digitalWrite(backwardPin_bottom, LOW);
       digitalWrite(forwardPin_bottom, HIGH);
-    }
-    else if(daTwist.linear_z < 0.0) {
-      //Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
+    } else if (daTwist.linear_z < 0.0) {
+      // Note: AlternatePin must be set to LOW before setting the other pin to
+      // HIGH! Both pins can never both be high
       digitalWrite(forwardPin_bottom, LOW);
       digitalWrite(backwardPin_bottom, HIGH);
     }
-  //   if(daTwist.angular_y == 0){
-  //    digitalWrite(backwardPin_top, LOW);
-  //    digitalWrite(forwardPin_top, LOW);
+    if (daTwist.angular_y == 0) {
+      digitalWrite(backwardPin_top, LOW);
+      digitalWrite(forwardPin_top, LOW);
 
-  //  }
-  //  else if(daTwist.angular_y > 0.0){
-  //      digitalWrite(backwardPin_top, LOW);
-  //      digitalWrite(forwardPin_top, HIGH);    
-  //  }
-  //   else if(daTwist.angular_y < 0.0){
-  //      digitalWrite(forwardPin_top, LOW);
-  //      digitalWrite(backwardPin_top, HIGH);    
-  //  }
-  
-
-}
+    } else if (daTwist.angular_y > 0.0) {
+      digitalWrite(backwardPin_top, LOW);
+      digitalWrite(forwardPin_top, HIGH);
+    } else if (daTwist.angular_y < 0.0) {
+      digitalWrite(forwardPin_top, LOW);
+      digitalWrite(backwardPin_top, HIGH);
+    }
+  }
 }
 
 //   // Check encoder publishing conditions
-//   if (millis() - encoderTimer > encoderPeriod && encoderCount_old != encoderCount) {
+//   if (millis() - encoderTimer > encoderPeriod && encoderCount_old !=
+//   encoderCount) {
 //     Serial.println("Encoder Count: " + String(encoderCount));
 //     encoderCount_old = encoderCount;
 //     encoderTimer = millis();
@@ -141,7 +138,8 @@ void loop() {
 //   hallB_old = hallB;
 
 //     // Check encoder publishing conditions
-//     if (millis() - encoderTimer > encoderPeriod && encoderCount_old != encoderCount) {
+//     if (millis() - encoderTimer > encoderPeriod && encoderCount_old !=
+//     encoderCount) {
 //       Serial.println("Encoder Count: " + String(encoderCount));
 //       encoderCount_old = encoderCount;
 //       encoderTimer = millis();
@@ -171,4 +169,3 @@ void loop() {
 //   hallD_old = hallD;
 
 // }
-  
