@@ -3,9 +3,9 @@
 This Arduino program is written for the Platform.io Vscode extension.
 All parameters for flashing can be found in the **platformio.ini** file
 
-This program currently includes the following libraries:
-- DD_Kinematics
-- Teleop-decoder (currently hardcoded into the main source file)
+**Custom Libraries:**
+1. Teleop-decoder - This functional library decodes incoming serial message containing twist command data
+2. DD_Kinematics - This class based library handles the setup of motor parameters for various kinematics implementations.
 
 ### Setup:
 1. Ensure Baudrate correctly matches the one set in the ROS2 Launch file
