@@ -91,7 +91,6 @@ void loop()
 
   //Hardcode velocity and angular velocity to test, in m/s and rad/s
   float linear_vel_x = daTwist.linear_x;
-  float linear_vel_y = daTwist.linear_y;
   float ang_vel_z = daTwist.angular_z;
 
   //find required rpm for each motor to obtain the desired values
