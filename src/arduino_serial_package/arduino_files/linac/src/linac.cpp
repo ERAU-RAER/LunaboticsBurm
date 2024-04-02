@@ -92,7 +92,22 @@ void loop() {
       digitalWrite(forwardPin_bottom, LOW);
       digitalWrite(backwardPin_bottom, HIGH);
     }
-  }
+  //   if(daTwist.angular_y == 0){
+  //    digitalWrite(backwardPin_top, LOW);
+  //    digitalWrite(forwardPin_top, LOW);
+
+  //  }
+  //  else if(daTwist.angular_y > 0.0){
+  //      digitalWrite(backwardPin_top, LOW);
+  //      digitalWrite(forwardPin_top, HIGH);    
+  //  }
+  //   else if(daTwist.angular_y < 0.0){
+  //      digitalWrite(forwardPin_top, LOW);
+  //      digitalWrite(backwardPin_top, HIGH);    
+  //  }
+  
+
+}
 }
 
 //   // Check encoder publishing conditions
