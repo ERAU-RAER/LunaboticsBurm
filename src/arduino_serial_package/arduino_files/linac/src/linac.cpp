@@ -30,7 +30,7 @@ Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 // unsigned long encoderTimer = 0;
 // int encoderPeriod = 250;  // Period for publishing encoder
 
-void setup() {
+void setup(){
   Serial.begin(9600); // Initialize serial communication at 9600 baud rate
 
   // Set Actuator pins to output
@@ -55,51 +55,51 @@ void setup() {
   // Serial.println("Setup complete. Ready to receive commands.");
 }
 
-void loop() {
+void loop(){
   // Check if serial data is available
-  if (Serial.available()) {
-    while (Serial.available() > 0) // Check if any characters are available
-    {
+  if (Serial.available()){
+    while (Serial.available() > 0){ // Check if any characters are available
       char incomingChar = Serial.read(); // Read the incoming character
 
-      if (incomingChar ==
-          '/') // Delimiter, check if it's the end of the message
-      {
+      if (incomingChar == '/'){ // Delimiter, check if it's the end of the message
         // Process the received command
         daTwist = parseTwist(command);
 
         // Reset the command string for the next message
         command = "";
-      } else {
+      } 
+      else{
         // Append the character to the command string
         command += incomingChar;
       }
     }
 
-    if (daTwist.linear_z == 0.0) {
-      // Note: AlternatePin must be set to LOW before setting the other pin to
-      // HIGH! Both pins can never both be high
+    if (daTwist.linear_z == 0.0){
+      // Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
       digitalWrite(backwardPin_bottom, LOW);
       digitalWrite(forwardPin_bottom, LOW);
-    } else if (daTwist.linear_z > 0.0) {
-      // Note: AlternatePin must be set to LOW before setting the other pin to
-      // HIGH! Both pins can never both be high
+    } 
+    else if (daTwist.linear_z > 0.0){
+      // Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
       digitalWrite(backwardPin_bottom, LOW);
       digitalWrite(forwardPin_bottom, HIGH);
-    } else if (daTwist.linear_z < 0.0) {
+    } 
+    else if (daTwist.linear_z < 0.0){
       // Note: AlternatePin must be set to LOW before setting the other pin to
       // HIGH! Both pins can never both be high
       digitalWrite(forwardPin_bottom, LOW);
       digitalWrite(backwardPin_bottom, HIGH);
     }
-    if (daTwist.angular_y == 0) {
+    if (daTwist.angular_y == 0){
       digitalWrite(backwardPin_top, LOW);
       digitalWrite(forwardPin_top, LOW);
 
-    } else if (daTwist.angular_y > 0.0) {
+    } 
+    else if (daTwist.angular_y > 0.0){
       digitalWrite(backwardPin_top, LOW);
       digitalWrite(forwardPin_top, HIGH);
-    } else if (daTwist.angular_y < 0.0) {
+    } 
+    else if (daTwist.angular_y < 0.0){
       digitalWrite(forwardPin_top, LOW);
       digitalWrite(backwardPin_top, HIGH);
     }
@@ -108,8 +108,7 @@ void loop() {
 
 //   // Check encoder publishing conditions
 //   if (millis() - encoderTimer > encoderPeriod && encoderCount_old !=
-//   encoderCount) {
-//     Serial.println("Encoder Count: " + String(encoderCount));
+//   encoderCount) {Serial.println("Encoder Count: " + String(encoderCount));
 //     encoderCount_old = encoderCount;
 //     encoderTimer = millis();
 //   }
@@ -139,8 +138,7 @@ void loop() {
 
 //     // Check encoder publishing conditions
 //     if (millis() - encoderTimer > encoderPeriod && encoderCount_old !=
-//     encoderCount) {
-//       Serial.println("Encoder Count: " + String(encoderCount));
+//     encoderCount) {Serial.println("Encoder Count: " + String(encoderCount));
 //       encoderCount_old = encoderCount;
 //       encoderTimer = millis();
 //     }
