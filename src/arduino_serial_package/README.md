@@ -25,6 +25,12 @@ sudo usermod -a -G dialout <username>  # To allow access to the /dev/ttyUSB#
 source /opt/ros/humble/setup.bash
 export ROS_DOMAIN_ID=42
 ```
+5. Flash Arduinos using Platform.io
+6. Set ports and baudrate in the launch file
+    To get the arduinos ports, run the following command:
+```
+ls /dev/serial/by-id/*
+```
 
 ## Terminal Setup
 
@@ -55,8 +61,4 @@ ros2 topic echo /arduino_chatter
 
 ## Known Issues
 - Sometimes the port stops working properly resulting in malformed data. Restarting your computer fixes it.
-- If the default port doesn't work, run the following command and paste the output into the launch file:
-```
-ls /dev/serial/by-id/*
-```
 - Make sure the Baudrates set in the launch file matches those found in the Arduino Files programs

@@ -10,47 +10,29 @@ The source code of the project follows this structure:
 ```
 LunaboticsBurm                                   <--- Root of the ROS2 Workspace
 ├── launch
-│   └── teleop_arduino_launch.xml                <--- ROS2 launch files with custom parameters
-└── src
-    └── arduino_serial_package
-        ├── arduino_files                        <--- Microcontroller companion code
-        │   ├── drivetrain                       <--- Platform.io project parent directory
-        │   │   ├── include
-        │   │   ├── lib
-        │   │   │   ├── Drive_Kinematics
-        │   │   │   │   ├── DD_Kinematics.cpp
-        │   │   │   │   └── DD_Kinematics.h
-        │   │   │   └── README
-        │   │   ├── platformio.ini
-        │   │   └── src
-        │   │       └── main.cpp
-        │   └── linac                            <--- Platform.io project parent directory
-        │       ├── include
-        │       │   └── Twist-Decoder.hpp
-        │       ├── lib
-        │       ├── platformio.ini
-        │       └── src
-        │           └── linac.cpp
-        └── arduino_serial_package
-            ├── arduino_serial_drivetrain.py     <--- ROS2 Node
-            └── arduino_serial_linac.py          <--- ROS2 Node
+│   └── launchfile-1.xml                         <--- ROS2 launch files with custom parameters
+└── src                                          <--- ROS2 Packages
+    ├── ROS2-Package-1
+    │   ├── arduino_files                        <--- Microcontroller companion code
+    │   │   ├── platform-1                       <--- Platform.io project parent directory
+    │   │   │   ├── include
+    │   │   │   ├── lib
+    │   │   │   ├── platformio.ini
+    │   │   │   └── src
+    │   │   │       └── main.cpp
+    │   │   └── platform-2                       <--- Platform.io project parent directory
+    │   └── ROS2-Package-1                       <--- ROS2 Package source code
+    │       ├── node1.py                         <--- ROS2 Node
+    │       └── node2.py                         <--- ROS2 Node
+    └── ROS2-Package-2      
 ```
 
 ## Code Overview
 
-### ROS2:
+### ROS2 Packages:
 
-1. arduino_serial_drivetrain - This node is responsible for connecting to the drivetrain microcontroller and sending twist commands over serial
-2. arduino_serial_linac - This node is responsible for connecting to the linac microcontroller and sending twist commands over serial
-
-### Arduino:
-
-1. drivetrain - This program handles the logic for converting velocity vectors into individual BLDC motor driver signals
-2. linac - This program handles the logic for converting velocity vectors into forward/reverse commands for bi-directional linear actuators
-
-**Custom Libraries:**
-1. Teleop-decoder - This functional library decodes incoming serial message containing twist command data
-2. DD_Kinematics - This class based library handles the setup of motor parameters for various kinematics implementations.
+1. arduino_serial_package - This package is responsible for communicating with various microcontrollers over serial. This includes drivetrain and linear actuator signaling
+2. teleop_input - This package contains modified teleop_twist nodes for the specific functional requirment of the robot
 
 ## Setup Details
 

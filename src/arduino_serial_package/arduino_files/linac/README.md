@@ -3,8 +3,8 @@
 This Arduino program is written for the Platform.io Vscode extension.
 All parameters for flashing can be found in the **platformio.ini** file
 
-This program currently includes the following libraries:
-- Teleop-decoder (currently hardcoded into the main source file)
+**Custom Libraries:**
+1. Teleop-decoder - This functional library decodes incoming serial message containing twist command data
 
 ### Setup:
 1. Ensure Baudrate correctly matches the one set in the ROS2 Launch file
