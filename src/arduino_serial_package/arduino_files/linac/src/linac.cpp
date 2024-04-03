@@ -93,7 +93,6 @@ void loop(){
     if (daTwist.angular_y == 0){
       digitalWrite(backwardPin_top, LOW);
       digitalWrite(forwardPin_top, LOW);
-
     } 
     else if (daTwist.angular_y > 0.0){
       digitalWrite(backwardPin_top, LOW);
