@@ -1,3 +1,0 @@
-[console_scripts]
-teleop_twist_keyboard = teleop_input.teleop_twist_keyboard:maincontroller = teleop_input.controller:controller
-
