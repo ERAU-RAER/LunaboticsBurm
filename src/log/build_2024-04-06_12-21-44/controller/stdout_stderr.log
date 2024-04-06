@@ -1,0 +1,36 @@
+running egg_info
+creating ../build/controller/controller.egg-info
+writing ../build/controller/controller.egg-info/PKG-INFO
+writing dependency_links to ../build/controller/controller.egg-info/dependency_links.txt
+writing entry points to ../build/controller/controller.egg-info/entry_points.txt
+writing requirements to ../build/controller/controller.egg-info/requires.txt
+writing top-level names to ../build/controller/controller.egg-info/top_level.txt
+writing manifest file '../build/controller/controller.egg-info/SOURCES.txt'
+reading manifest file '../build/controller/controller.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/controller/controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lunabotics/LunaboticsBurm/src/build/controller/build
+creating /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib
+creating /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller
+copying controller/__init__.py -> /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller
+copying controller/controller.py -> /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller
+running install
+running install_lib
+creating /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller
+copying /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller/__init__.py -> /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller
+copying /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller/controller.py -> /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller
+byte-compiling /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller/controller.py to controller.cpython-310.pyc
+running install_data
+creating /home/lunabotics/LunaboticsBurm/src/install/controller/share/ament_index
+creating /home/lunabotics/LunaboticsBurm/src/install/controller/share/ament_index/resource_index
+creating /home/lunabotics/LunaboticsBurm/src/install/controller/share/ament_index/resource_index/packages
+copying resource/controller -> /home/lunabotics/LunaboticsBurm/src/install/controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/lunabotics/LunaboticsBurm/src/install/controller/share/controller
+running install_egg_info
+Copying ../build/controller/controller.egg-info to /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller script to /home/lunabotics/LunaboticsBurm/src/install/controller/lib/controller
+writing list of installed files to '/home/lunabotics/LunaboticsBurm/src/build/controller/install.log'
