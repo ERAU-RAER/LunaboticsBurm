@@ -1,0 +1,25 @@
+[0.664s] Invoking command in '/home/lunabotics/LunaboticsBurm/src/controller': PYTHONPATH=/home/lunabotics/LunaboticsBurm/src/build/controller/prefix_override:/home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/controller build --build-base /home/lunabotics/LunaboticsBurm/src/build/controller/build install --record /home/lunabotics/LunaboticsBurm/src/build/controller/install.log --single-version-externally-managed install_data
+[0.923s] running egg_info
+[0.924s] writing ../build/controller/controller.egg-info/PKG-INFO
+[0.924s] writing dependency_links to ../build/controller/controller.egg-info/dependency_links.txt
+[0.925s] writing entry points to ../build/controller/controller.egg-info/entry_points.txt
+[0.925s] writing requirements to ../build/controller/controller.egg-info/requires.txt
+[0.925s] writing top-level names to ../build/controller/controller.egg-info/top_level.txt
+[0.928s] reading manifest file '../build/controller/controller.egg-info/SOURCES.txt'
+[0.928s] adding license file 'LICENSE'
+[0.929s] writing manifest file '../build/controller/controller.egg-info/SOURCES.txt'
+[0.929s] running build
+[0.930s] running build_py
+[0.930s] copying controller/controller.py -> /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller
+[0.930s] running install
+[0.930s] running install_lib
+[0.931s] copying /home/lunabotics/LunaboticsBurm/src/build/controller/build/lib/controller/controller.py -> /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller
+[0.932s] byte-compiling /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller/controller.py to controller.cpython-310.pyc
+[0.933s] running install_data
+[0.933s] running install_egg_info
+[0.935s] removing '/home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.935s] Copying ../build/controller/controller.egg-info to /home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[0.936s] running install_scripts
+[0.960s] Installing controller script to /home/lunabotics/LunaboticsBurm/src/install/controller/lib/controller
+[0.961s] writing list of installed files to '/home/lunabotics/LunaboticsBurm/src/build/controller/install.log'
+[0.991s] Invoked command in '/home/lunabotics/LunaboticsBurm/src/controller' returned '0': PYTHONPATH=/home/lunabotics/LunaboticsBurm/src/build/controller/prefix_override:/home/lunabotics/LunaboticsBurm/src/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/controller build --build-base /home/lunabotics/LunaboticsBurm/src/build/controller/build install --record /home/lunabotics/LunaboticsBurm/src/build/controller/install.log --single-version-externally-managed install_data
