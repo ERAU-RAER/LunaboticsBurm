@@ -1,0 +1,40 @@
+[0.733s] Invoking command in '/home/lunabotics/LunaboticsBurm/src/teleop_input': PYTHONPATH=/home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/prefix_override:/home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/teleop_input build --build-base /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build install --record /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/install.log --single-version-externally-managed install_data
+[1.012s] running egg_info
+[1.012s] creating build/teleop_input/teleop_input.egg-info
+[1.013s] writing build/teleop_input/teleop_input.egg-info/PKG-INFO
+[1.013s] writing dependency_links to build/teleop_input/teleop_input.egg-info/dependency_links.txt
+[1.013s] writing entry points to build/teleop_input/teleop_input.egg-info/entry_points.txt
+[1.013s] writing requirements to build/teleop_input/teleop_input.egg-info/requires.txt
+[1.014s] writing top-level names to build/teleop_input/teleop_input.egg-info/top_level.txt
+[1.014s] writing manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+[1.017s] reading manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+[1.017s] writing manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+[1.018s] running build
+[1.018s] running build_py
+[1.018s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build
+[1.018s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib
+[1.018s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+[1.018s] copying teleop_input/__init__.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+[1.018s] copying teleop_input/controller.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+[1.018s] copying teleop_input/teleop_twist_keyboard.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+[1.019s] running install
+[1.019s] running install_lib
+[1.020s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+[1.020s] copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/__init__.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+[1.020s] copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/controller.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+[1.020s] copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/teleop_twist_keyboard.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+[1.021s] byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/__init__.py to __init__.cpython-310.pyc
+[1.021s] byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/controller.py to controller.cpython-310.pyc
+[1.022s] byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/teleop_twist_keyboard.py to teleop_twist_keyboard.cpython-310.pyc
+[1.023s] running install_data
+[1.023s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index
+[1.023s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index
+[1.024s] creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index/packages
+[1.024s] copying resource/teleop_input -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index/packages
+[1.024s] copying package.xml -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/teleop_input
+[1.024s] running install_egg_info
+[1.026s] Copying build/teleop_input/teleop_input.egg-info to /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input-0.0.0-py3.10.egg-info
+[1.027s] running install_scripts
+[1.053s] Installing teleop_twist_keyboard = teleop_input.teleop_twist_keyboard:maincontroller script to /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/teleop_input
+[1.054s] writing list of installed files to '/home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/install.log'
+[1.088s] Invoked command in '/home/lunabotics/LunaboticsBurm/src/teleop_input' returned '0': PYTHONPATH=/home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/prefix_override:/home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/teleop_input build --build-base /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build install --record /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/install.log --single-version-externally-managed install_data

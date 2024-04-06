@@ -1,0 +1,38 @@
+running egg_info
+creating build/teleop_input/teleop_input.egg-info
+writing build/teleop_input/teleop_input.egg-info/PKG-INFO
+writing dependency_links to build/teleop_input/teleop_input.egg-info/dependency_links.txt
+writing entry points to build/teleop_input/teleop_input.egg-info/entry_points.txt
+writing requirements to build/teleop_input/teleop_input.egg-info/requires.txt
+writing top-level names to build/teleop_input/teleop_input.egg-info/top_level.txt
+writing manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+reading manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+writing manifest file 'build/teleop_input/teleop_input.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+copying teleop_input/__init__.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+copying teleop_input/controller.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+copying teleop_input/teleop_twist_keyboard.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input
+running install
+running install_lib
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/__init__.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/controller.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+copying /home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/build/lib/teleop_input/teleop_twist_keyboard.py -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input
+byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/controller.py to controller.cpython-310.pyc
+byte-compiling /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input/teleop_twist_keyboard.py to teleop_twist_keyboard.cpython-310.pyc
+running install_data
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index
+creating /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index/packages
+copying resource/teleop_input -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/ament_index/resource_index/packages
+copying package.xml -> /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/share/teleop_input
+running install_egg_info
+Copying build/teleop_input/teleop_input.egg-info to /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/python3.10/site-packages/teleop_input-0.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_twist_keyboard = teleop_input.teleop_twist_keyboard:maincontroller script to /home/lunabotics/LunaboticsBurm/src/teleop_input/install/teleop_input/lib/teleop_input
+writing list of installed files to '/home/lunabotics/LunaboticsBurm/src/teleop_input/build/teleop_input/install.log'
