@@ -91,11 +91,10 @@ void loop()
 
   //Hardcode velocity and angular velocity to test, in m/s and rad/s
   float linear_vel_x = daTwist.linear_x;
-  float linear_vel_y = daTwist.linear_y;
   float ang_vel_z = daTwist.angular_z;
 
   //find required rpm for each motor to obtain the desired values
-  rpm = Kinematics.getRPM(linear_vel_x, linear_vel_y, ang_vel_z);
+  rpm = Kinematics.getRPM(linear_vel_x, ang_vel_z);
 
   //Disable motor 1 if RPM is zero
   if (rpm.motor1 == 0) {
@@ -178,12 +177,12 @@ void loop()
   }
 
   // Initalize getPWM so that pwm.motor(n) will work
-  pwm = Kinematics.getPWM(linear_vel_x, linear_vel_y, ang_vel_z);
+  pwm = Kinematics.getPWM(linear_vel_x, ang_vel_z);
 
-  analogWrite(motor1_pin, abs(pwm.motor1));
-  analogWrite(motor2_pin, abs(pwm.motor2));
-  analogWrite(motor3_pin, abs(pwm.motor3));
-  analogWrite(motor4_pin, abs(pwm.motor4));
+  analogWrite(motor1_pin, pwm.motor1);
+  analogWrite(motor2_pin, pwm.motor2);
+  analogWrite(motor3_pin, pwm.motor3);
+  analogWrite(motor4_pin, pwm.motor4);
 }
 
 Twist parseTwistandReturn(const String &msg)

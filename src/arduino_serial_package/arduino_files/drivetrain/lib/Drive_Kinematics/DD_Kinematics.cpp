@@ -11,11 +11,10 @@ DD_Kinematics::DD_Kinematics(int motor_max_rpm, float wheel_diameter, float fr_w
 {
 }
 
-DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float linear_y, float angular_z)
+DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float angular_z)
 {
     //convert m/s to m/min
     linear_vel_x_mins_ = linear_x * 60;
-    linear_vel_y_mins_ = linear_y * 60;
 
     //convert rad/s to rad/min
     angular_vel_z_mins_ = angular_z * 60;
@@ -24,31 +23,42 @@ DD_Kinematics::output DD_Kinematics::getRPM(float linear_x, float linear_y, floa
     tangential_vel_ = angular_vel_z_mins_ * lr_wheels_dist_;
 
     x_rpm_ = linear_vel_x_mins_ / circumference_;
-    y_rpm_ = linear_vel_y_mins_ / circumference_;
     tan_rpm_ = tangential_vel_ / circumference_;
 
     DD_Kinematics::output rpm;
 
     //fl motor
-    rpm.motor1 = x_rpm_ - y_rpm_ - tan_rpm_;
+    rpm.motor1 = x_rpm_ - tan_rpm_;
+    if (rpm.motor1 > max_rpm_) {
+        rpm.motor1 = max_rpm_;
+    }
     //rl motor
-    rpm.motor2 = x_rpm_ + y_rpm_ - tan_rpm_;
+    rpm.motor2 = x_rpm_ - tan_rpm_;
+    if (rpm.motor2 > max_rpm_) {
+        rpm.motor2 = max_rpm_;
+    }
     //fr motor
-    rpm.motor3 = x_rpm_ + y_rpm_ + tan_rpm_;
+    rpm.motor3 = x_rpm_ + tan_rpm_;
+    if (rpm.motor3 > max_rpm_) {
+        rpm.motor3 = max_rpm_;
+    }
     //rr motor
-    rpm.motor4 = x_rpm_ - y_rpm_ + tan_rpm_;
+    rpm.motor4 = x_rpm_ + tan_rpm_;
+    if (rpm.motor4 > max_rpm_) {
+        rpm.motor4 = max_rpm_;
+    }
 
     return rpm;
 }
 
-DD_Kinematics::output DD_Kinematics::getPWM(float linear_x, float linear_y, float angular_z)
+DD_Kinematics::output DD_Kinematics::getPWM(float linear_x, float angular_z)
 {
 
     DD_Kinematics::output rpm;
     DD_Kinematics::output pwm;
 
     //Initialize rpm for RPMtoPWM
-    rpm = getRPM(linear_x, linear_y, angular_z);
+    rpm = getRPM(linear_x, angular_z);
 
     //convert from RPM to PWM for both wheels
     pwm.motor1 = RPMtoPWM(rpm.motor1);
@@ -66,9 +76,6 @@ DD_Kinematics::velocities DD_Kinematics::getVelocities(int motor1, int motor2, i
     float average_rps_x = ((float)(motor1 + motor2 + motor3 + motor4) / 4) / 60; //Get RPM, then convert to RPS
     vel.linear_x = (average_rps_x * circumference_); // In m/s
 
-    float average_rps_y = ((float)(- motor1 + motor2 + motor3 - motor4) / 4) / 60; //Get RPM, then convert to RPS
-    vel.linear_y = (average_rps_y * circumference_); // In m/s
-
     float average_rps_a = ((float)(- motor1 + motor2 - motor3 + motor4) / 4) / 60;
     vel.angular_z = (average_rps_a * circumference_) / (fr_wheels_dist_ / 2 + lr_wheels_dist_ / 2);
 
@@ -78,6 +85,6 @@ DD_Kinematics::velocities DD_Kinematics::getVelocities(int motor1, int motor2, i
 int DD_Kinematics::RPMtoPWM(int rpm)
 {
     //Make rpm a ratio of max_rpm and remap that to a pwm signal
-    return (((float) rpm / (float) max_rpm_) * pwm_res_);
+    return (abs(((float) rpm / (float) max_rpm_)) * pwm_res_);
 
 }
