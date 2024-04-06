@@ -3,10 +3,10 @@
 #include "Twist-Decoder.hpp"
 // Encoder Variables //
 
-#define forwardPin_top 43    // First pin for moving forward
-#define backwardPin_top 45   // First pin for moving backward
-#define forwardPin_bottom 6  // First pin for moving forward
-#define backwardPin_bottom 7 // First pin for moving backward
+#define forwardPin_top 42     // First pin for moving forward
+#define backwardPin_top 43    // First pin for moving backward
+#define forwardPin_bottom 47  // First pin for moving forward
+#define backwardPin_bottom 49 // First pin for moving backward
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -73,6 +73,8 @@ void loop(){
         command += incomingChar;
       }
     }
+
+    sanityCheck(daTwist);
 
     if (daTwist.linear_z == 0.0){
       // Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high
