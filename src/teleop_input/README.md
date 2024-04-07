@@ -11,6 +11,10 @@ teleop_input                           <--- Root of the teleop input package
 └── test
 ```
 
+#TODO:
+1. Create a launch file for joy
+2. Update READEMEs
+
 ## Dependencies and setup (Driver):
 1. Add the following lines to your .bashrc file:
 ```
