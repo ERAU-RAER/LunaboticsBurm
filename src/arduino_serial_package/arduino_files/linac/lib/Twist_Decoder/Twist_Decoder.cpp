@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "Twist_Decoder.h"
 
-Twist previousTwist = {0.0,  0.0, 0.0, 0.0, 0.0, 0.0};
+Twist previousTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 void sanityCheck(const Twist &twist) // Make sure your custom function takes the Twist struct as a parameter
 {

@@ -36,7 +36,6 @@ void setup()
   pinMode(motor2_pin, OUTPUT);
   pinMode(motor3_pin, OUTPUT);
   pinMode(motor4_pin, OUTPUT);
-  
 } 
 
 void loop()
