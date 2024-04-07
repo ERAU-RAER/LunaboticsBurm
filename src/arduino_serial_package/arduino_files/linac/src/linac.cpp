@@ -1,6 +1,6 @@
 #include <Arduino.h>
+#include <Twist_Decoder.h>
 
-#include "Twist-Decoder.hpp"
 // Encoder Variables //
 
 #define forwardPin_top 43    // First pin for moving forward
