@@ -12,10 +12,10 @@
 #define PWM_BITS 8             // microcontroller's PWM pin resolution. Arduino Mega 2560 is using 8 bits (0-255)
 
 // Define pin variables
-#define motor1_pin 13
-#define motor2_pin 12
-#define motor3_pin 11
-#define motor4_pin 10
+#define motor1_pin 5
+#define motor2_pin 4
+#define motor3_pin 3
+#define motor4_pin 2
 
 #define dir1_pin 22
 #define dir2_pin 23
@@ -76,6 +76,7 @@ void loop()
     {
       // Process the received command
       daTwist = parseTwist(command);
+      sanityCheck(daTwist);
 
       // Reset the command string for the next message
       command = "";
@@ -150,17 +151,17 @@ void loop()
 
   // Tell the motor which direction to turn based on if the given rpm value is positive or negative
   if (rpm.motor1 < 0) {
-    pinMode(dir1_pin, INPUT);
+    pinMode(dir1_pin, OUTPUT); //Inverted
   }
   else {
-    pinMode(dir1_pin, OUTPUT);
+    pinMode(dir1_pin, INPUT);
   }
 
   if (rpm.motor2 < 0) {
-    pinMode(dir2_pin, INPUT);
+    pinMode(dir2_pin, OUTPUT); //Inverted
   }
   else {
-    pinMode(dir2_pin, OUTPUT);
+    pinMode(dir2_pin, INPUT);
   }
 
   if (rpm.motor3 < 0) {
