@@ -1,6 +1,0 @@
-<launch>
-    <node pkg="joy" exec="joy_node" name="joy_node" output="screen">
-    </node>
-    <node pkg="teleop_input" exec="controller" name="teleop_twist_joy_node" output="screen">
-    </node>
-</launch>
