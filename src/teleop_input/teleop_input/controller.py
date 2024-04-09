@@ -32,6 +32,22 @@ class JoyToCmdVel:
   
         twist_msg.angular.y = msg.axes[0]
 
+        if msg.buttons[0]:
+
+            twist_msg.linear.y = 1.0
+
+        elif msg.buttons[1]:
+
+            twist_msg.linear.y = 2.0
+
+        elif msg.buttons[2]:
+
+            twist_msg.linear.y = 3.0
+
+        elif msg.buttons[3]:
+
+            twist_msg.linear.y = 4.0
+
 
         # Publish Twist message
 

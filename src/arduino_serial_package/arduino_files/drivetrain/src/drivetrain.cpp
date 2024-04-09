@@ -12,15 +12,25 @@
 #define PWM_BITS 8             // microcontroller's PWM pin resolution. Arduino Mega 2560 is using 8 bits (0-255)
 
 // Define pin variables
-int motor1_pin = 11;
-int motor2_pin = 10;
-int motor3_pin = 9;
-int motor4_pin = 5;
+#define motor1_pin 13
+#define motor2_pin 12
+#define motor3_pin 11
+#define motor4_pin 10
 
-int dir1_pin = 22;
-int dir2_pin = 23;
-int dir3_pin = 24;
-int dir4_pin = 25;
+#define dir1_pin 22
+#define dir2_pin 23
+#define dir3_pin 28
+#define dir4_pin 29
+
+#define stop_1 24
+#define stop_2 25
+#define stop_3 30
+#define stop_4 31
+
+#define brk_1 26
+#define brk_2 27
+#define brk_3 32
+#define brk_4 33
 
 DD_Kinematics Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, FR_WHEELS_DIST, LR_WHEELS_DIST, PWM_BITS);
 
@@ -36,6 +46,12 @@ void setup()
   pinMode(motor2_pin, OUTPUT);
   pinMode(motor3_pin, OUTPUT);
   pinMode(motor4_pin, OUTPUT);
+
+  // Initialize Enable pins as outputs
+  pinMode(stop_1, OUTPUT);
+  pinMode(stop_2, OUTPUT);
+  pinMode(stop_3, OUTPUT);
+  pinMode(stop_4, OUTPUT);
 } 
 
 void loop()
@@ -69,6 +85,41 @@ void loop()
   //find required rpm for each motor to obtain the desired values
   rpm = Kinematics.getRPM(linear_vel_x, ang_vel_z);
 
+  //Disable motor 1 if RPM is zero
+  if (rpm.motor1 == 0) {
+    digitalWrite(stop_1, LOW);
+  }
+  else {
+    // Enable motor 1 if RPM is not zero
+    digitalWrite(stop_1, HIGH);
+  }
+
+  // Disable motor 2 if RPM is zero
+  if (rpm.motor2 == 0) {
+    digitalWrite(stop_2, LOW);
+  }
+  else {
+    // Enable motor 2 if RPM is not zero
+    digitalWrite(stop_2, HIGH);
+  }
+
+    // Disable motor 2 if RPM is zero
+  if (rpm.motor3 == 0) {
+    digitalWrite(stop_3, LOW);
+  }
+  else {
+    // Enable motor 2 if RPM is not zero
+    digitalWrite(stop_3, HIGH);
+  }
+  
+    // Disable motor 2 if RPM is zero
+  if (rpm.motor4 == 0) {
+    digitalWrite(stop_4, LOW);
+  }
+  else {
+    // Enable motor 2 if RPM is not zero
+    digitalWrite(stop_4, HIGH);
+  }
   // Something like what we'd want to do for motor speed feedback. Demo is below to let the motors work
   // int motor1_feedback = rpm.encoder1;
   // int motor2_feedback = rpm.encoder2;
