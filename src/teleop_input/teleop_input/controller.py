@@ -24,13 +24,29 @@ class JoyToCmdVel:
 
         twist_msg = Twist()
 
-        twist_msg.linear.x = msg.axes[1]  # Assuming Y-axis of the joystick for forward/backward motion
+        twist_msg.linear.x = msg.axes[5]  # Assuming Y-axis of the joystick for forward/backward motion
 
-        twist_msg.angular.z = msg.axes[0]  # Assuming X-axis of the joystick for rotation
+        twist_msg.angular.z = msg.axes[4]  # Assuming X-axis of the joystick for rotation
 
-        twist_msg.linear.z = msg.axes[5]
+        twist_msg.linear.z = msg.axes[1]
   
-        twist_msg.angular.y = msg.axes[4]
+        twist_msg.angular.y = msg.axes[0]
+
+        if msg.buttons[0]:
+
+            twist_msg.linear.y = 1.0
+
+        elif msg.buttons[1]:
+
+            twist_msg.linear.y = 2.0
+
+        elif msg.buttons[2]:
+
+            twist_msg.linear.y = 3.0
+
+        elif msg.buttons[3]:
+
+            twist_msg.linear.y = 4.0
 
 
         # Publish Twist message
