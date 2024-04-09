@@ -104,6 +104,7 @@ void loop()
   else {
     // Enable motor 1 if RPM is not zero
     digitalWrite(stop1_pin, HIGH);
+
   }
 
   // Disable motor 2 if RPM is zero
@@ -132,7 +133,6 @@ void loop()
     // Enable motor 2 if RPM is not zero
     digitalWrite(stop4_pin, HIGH);
   }
-
   // Something like what we'd want to do for motor speed feedback. Demo is below to let the motors work
   // int motor1_feedback = rpm.encoder1;
   // int motor2_feedback = rpm.encoder2;
