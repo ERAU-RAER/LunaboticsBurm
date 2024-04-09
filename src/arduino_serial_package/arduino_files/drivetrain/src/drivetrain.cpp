@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <DD_Kinematics.h>
+#include <Twist_Decoder.h>
 
 // ARDUINO NEEDS AN EXTERNAL GROUND, USB GROUND IS TOO DIRTY
 // Needs power supplies, voltage is lacking when on usb
@@ -33,24 +34,7 @@
 
 DD_Kinematics Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, FR_WHEELS_DIST, LR_WHEELS_DIST, PWM_BITS);
 
-bool debug = true;
-
-struct Twist
-{
-  float linear_x;
-  float linear_y;
-  float linear_z;
-  float angular_x;
-  float angular_y;
-  float angular_z;
-};
-
-Twist parseTwistandReturn(const String &msg_);
-
-void processTwist(const Twist &twist);
-
 String command = "";
-Twist previousTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 void setup() 
@@ -62,7 +46,7 @@ void setup()
   pinMode(motor2_pin, OUTPUT);
   pinMode(motor3_pin, OUTPUT);
   pinMode(motor4_pin, OUTPUT);
-  
+
   // Initialize Enable pins as outputs
   pinMode(stop_1, OUTPUT);
   pinMode(stop_2, OUTPUT);
@@ -79,7 +63,7 @@ void loop()
     if (incomingChar == '/') // Delimiter, check if it's the end of the message
     {
       // Process the received command
-      daTwist = parseTwistandReturn(command);
+      daTwist = parseTwist(command);
 
       // Reset the command string for the next message
       command = "";
@@ -136,7 +120,6 @@ void loop()
     // Enable motor 2 if RPM is not zero
     digitalWrite(stop_4, HIGH);
   }
-
   // Something like what we'd want to do for motor speed feedback. Demo is below to let the motors work
   // int motor1_feedback = rpm.encoder1;
   // int motor2_feedback = rpm.encoder2;
@@ -188,65 +171,4 @@ void loop()
   analogWrite(motor2_pin, pwm.motor2);
   analogWrite(motor3_pin, pwm.motor3);
   analogWrite(motor4_pin, pwm.motor4);
-}
-
-Twist parseTwistandReturn(const String &msg)
-{
-  Twist twist;
-  int index = 0;
-
-  // Find linear velocities
-  twist.linear_x = msg.substring(index, msg.indexOf(',')).toFloat();
-  index = msg.indexOf(',') + 1;
-  twist.linear_y = msg.substring(index, msg.indexOf(',', index)).toFloat();
-  index = msg.indexOf(',', index) + 1;
-  twist.linear_z = msg.substring(index, msg.indexOf(',', index)).toFloat();
-  index = msg.indexOf(',', index) + 1;
-
-  // Find angular velocities
-  twist.angular_x = msg.substring(index, msg.indexOf(',', index)).toFloat();
-  index = msg.indexOf(',', index) + 1;
-  twist.angular_y = msg.substring(index, msg.indexOf(',', index)).toFloat();
-  index = msg.indexOf(',', index) + 1;
-  twist.angular_z = msg.substring(index).toFloat();
-
-  // Process the Twist message
-  if (debug)
-  {
-    processTwist(twist); // Replace this with whatever custom functions you would want to run for your 
-    // arduino script, pass the struct to your custom function
-  }
-
-  return twist; // RETURN THE TWWIIIIST
-}
-
-void processTwist(const Twist &twist) // Make sure your custom function takes the Twist struct as a parameter
-{
-  // Check if any of the velocities have changed
-  if (twist.linear_x != previousTwist.linear_x ||
-      twist.linear_y != previousTwist.linear_y ||
-      twist.linear_z != previousTwist.linear_z ||
-      twist.angular_x != previousTwist.angular_x ||
-      twist.angular_y != previousTwist.angular_y ||
-      twist.angular_z != previousTwist.angular_z)
-  {
-    // Print the velocities
-    Serial.println("linear:");
-    Serial.print("  x: ");
-    Serial.println(twist.linear_x);
-    Serial.print("  y: ");
-    Serial.println(twist.linear_y);
-    Serial.print("  z: ");
-    Serial.println(twist.linear_z);
-
-    Serial.println("angular:");
-    Serial.print("  x: ");
-    Serial.println(twist.angular_x);
-    Serial.print("  y: ");
-    Serial.println(twist.angular_y);
-    Serial.print("  z: ");
-    Serial.println(twist.angular_z);
-
-    previousTwist = twist;
-  }
 }

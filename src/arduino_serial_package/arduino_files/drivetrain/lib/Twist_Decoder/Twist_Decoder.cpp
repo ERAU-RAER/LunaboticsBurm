@@ -1,16 +1,5 @@
-#pragma once
-
-#include <Arduino.h>
-
-struct Twist // This creates a format for storing the velocity data, easily accessible as variables later on in your code
-{
-    float linear_x;
-    float linear_y;
-    float linear_z;
-    float angular_x;
-    float angular_y;
-    float angular_z;
-};
+#include "Arduino.h"
+#include "Twist_Decoder.h"
 
 Twist previousTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
