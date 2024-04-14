@@ -22,18 +22,6 @@ void setup(){
   pinMode(backwardPin_bottom, OUTPUT);
 }
 
-void setup(){
-
-  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
-
-  // Set Actuator pins to output
-  pinMode(forwardPin_top, OUTPUT);
-  pinMode(backwardPin_top, OUTPUT);
-  pinMode(forwardPin_bottom, OUTPUT);
-  pinMode(backwardPin_bottom, OUTPUT);
-
-}
-
 void loop(){
   // Check if serial data is available
   if (Serial.available()){

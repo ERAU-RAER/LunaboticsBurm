@@ -4,16 +4,15 @@
 
 struct Velocities
 {
-    float actuator_a;
-    float actuator_b;
+    float actuator_n;
 };
 struct output
 {
-    float actuator_a;
-    float actuator_b;
+    float actuator_n;
 };
-Velocities getVelocities(float lin_a_ex, float lin_a_re, float lin_b_ex, float lin_b_re);
-output getPWM(float lin_a_ex, float lin_a_re, float lin_b_ex, float lin_b_re);
+
+Velocities getVelocities(float lin_move);
+output getPWM(float lin_move);
 int VELtoPWM(float vel);
 
 extern int duty_cycle; // Define as a while number, i.e. 25% == 25
