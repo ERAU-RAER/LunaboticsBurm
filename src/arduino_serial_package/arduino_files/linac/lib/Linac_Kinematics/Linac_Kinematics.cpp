@@ -11,9 +11,9 @@ Velocities getVelocities(float lin_move)
     Velocities vel;
 
     vel.actuator_n = lin_move; // Make retraction negative and extension positive
-    if (vel.actuator_n >= 0 && abs(vel.actuator_n >= max_vel)) { // Make sure that neither extension nor retraction will go above max speed
+    if (vel.actuator_n >= 0 && abs(vel.actuator_n > max_vel)) { // Make sure that neither extension nor retraction will go above max speed
         vel.actuator_n = max_vel;
-    } else if (vel.actuator_n < 0 && abs(vel.actuator_n >= max_vel)) {
+    } else if (vel.actuator_n < 0 && abs(vel.actuator_n > max_vel)) {
         vel.actuator_n = -max_vel;
     }
 
