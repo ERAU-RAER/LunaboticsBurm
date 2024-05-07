@@ -14,6 +14,10 @@
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
+float mm_per_sec = 15; // Define the needed variables
+int duty_cycle = 25;
+int pwm_bits = 8;
+
 void setup(){
 
   Serial.begin(9600); // Initialize serial communication at 9600 baud rate
@@ -48,10 +52,6 @@ void loop(){
 
     // Do big actuators first
 
-    float mm_per_sec = 15; // Define the needed variables
-    float duty_cycle = 25;
-    int pwm_res = 8;
-
     float linear_vel_a = daTwist.linear_z; // set requested velocity and feed into functions
     output pwm = getPWM(linear_vel_a);
     int pwm_a = pwm.actuator_n;
@@ -71,12 +71,10 @@ void loop(){
     
     // Now for the Little Actuator
     
-    float mm_per_sec = 10; // Same comments as the if statement above
-    float duty_cycle = 25;
-    int pwm_res = 8;
+    mm_per_sec = 10; // Same comments as the if statement above
 
     float linear_vel_b = daTwist.angular_y;
-    output pwm = getPWM(linear_vel_b);
+    pwm = getPWM(linear_vel_b);
     int pwm_b = pwm.actuator_n;
 
     if (linear_vel_b > 0){
