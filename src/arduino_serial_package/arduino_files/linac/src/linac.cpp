@@ -48,7 +48,7 @@ void loop(){
 
     // Do big actuators first
 
-    float mm_per_sec = 15.6; // Define the needed variables
+    float mm_per_sec = 15; // Define the needed variables
     float duty_cycle = 25;
     int pwm_res = 8;
 
@@ -71,7 +71,7 @@ void loop(){
     
     // Now for the Little Actuator
     
-    float mm_per_sec = 15.6; // Same comments as the if statement above
+    float mm_per_sec = 10; // Same comments as the if statement above
     float duty_cycle = 25;
     int pwm_res = 8;
 
