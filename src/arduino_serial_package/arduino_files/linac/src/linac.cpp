@@ -6,8 +6,8 @@
 
 // Pin Defs
 
-#define forwardPin_top 42     // Little Actuator pin for extending
-#define backwardPin_top 43    // Little Actuator pin for retracting
+#define forwardPin_top 6     // Little Actuator pin for extending
+#define backwardPin_top 7    // Little Actuator pin for retracting
 #define forwardPin_bottom 47  // Big Actuators pin for extending
 #define backwardPin_bottom 49 // Big Actuators pin for retracting
 
