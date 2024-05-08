@@ -56,8 +56,7 @@ void loop(){
 
     // Do big actuators first
     float vel = 0;
-    float linear_vel_a = 0.002;
-    // float linear_vel_a = daTwist.linear_z; // set requested velocity and feed into functions
+    float linear_vel_a = daTwist.linear_z; // set requested velocity and feed into functions
     if (linear_vel_a >= 0 && abs(linear_vel_a > max_vel)) { // Make sure that neither extension nor retraction will go above max speed
         vel = max_vel;
     } else if (linear_vel_a < 0 && abs(linear_vel_a > max_vel)) {
@@ -84,8 +83,7 @@ void loop(){
     // Now for the Little Actuator
     
     mm_per_sec = 10; // Same comments as the if statement above
-    float linear_vel_b = 1;
-    // float linear_vel_b = daTwist.angular_y; // set requested velocity and feed into functions
+    float linear_vel_b = daTwist.angular_y; // set requested velocity and feed into functions
     if (linear_vel_b >= 0 && abs(linear_vel_b > max_vel)) { // Make sure that neither extension nor retraction will go above max speed
         vel = max_vel;
     } else if (linear_vel_b < 0 && abs(linear_vel_b > max_vel)) {
