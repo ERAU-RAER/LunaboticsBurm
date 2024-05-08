@@ -2,18 +2,13 @@
 
 #include "Arduino.h"
 
-struct Velocities
-{
-    float actuator_n;
-};
-struct output
-{
-    float actuator_n;
-};
+float getVelocities(float lin_move);
+float getPWM(float lin_move);
+float VELtoPWM(float vel);
 
-Velocities getVelocities(float lin_move);
-output getPWM(float lin_move);
-int VELtoPWM(float vel);
+extern float actuator_n;
+extern float vel;
+extern int pwm;
 
 extern int duty_cycle; // Define as a while number, i.e. 25% == 25
 extern float mm_per_sec; // Define as mm/s, i.e. 15 mm/s == 15

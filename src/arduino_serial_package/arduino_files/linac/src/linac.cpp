@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Linac_Kinematics.h>
+// #include <Linac_Kinematics.h>
 #include <Twist_Decoder.h>
 
 // Note: AlternatePin must be set to LOW before setting the other pin to HIGH! Both pins can never both be high!!!!
@@ -15,8 +15,11 @@ String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 float mm_per_sec = 15; // Define the needed variables
-int duty_cycle = 25;
-int pwm_bits = 8;
+float max_vel = mm_per_sec / 1000;
+float duty_cycle = 25;
+float pwm_bits = 8;
+float pwm_lim = duty_cycle / 100;
+float pwm_res = (pow(2, pwm_bits) - 1);
 
 void setup(){
 
@@ -49,12 +52,21 @@ void loop(){
     }
 
     sanityCheck(daTwist);
+  }
 
     // Do big actuators first
-
-    float linear_vel_a = daTwist.linear_z; // set requested velocity and feed into functions
-    output pwm = getPWM(linear_vel_a);
-    int pwm_a = pwm.actuator_n;
+    float vel = 0;
+    float linear_vel_a = 0.002;
+    // float linear_vel_a = daTwist.linear_z; // set requested velocity and feed into functions
+    if (linear_vel_a >= 0 && abs(linear_vel_a > max_vel)) { // Make sure that neither extension nor retraction will go above max speed
+        vel = max_vel;
+    } else if (linear_vel_a < 0 && abs(linear_vel_a > max_vel)) {
+        vel = -max_vel;
+    } else {
+        vel = linear_vel_a;
+    }
+    float pwm_a = ((abs(vel / max_vel) * pwm_res) * pwm_lim);
+    Serial.println(pwm_a);
 
     if (linear_vel_a > 0){ // Go up if requested velocity is above 0
       analogWrite(forwardPin_bottom, pwm_a);
@@ -72,10 +84,17 @@ void loop(){
     // Now for the Little Actuator
     
     mm_per_sec = 10; // Same comments as the if statement above
-
-    float linear_vel_b = daTwist.angular_y;
-    pwm = getPWM(linear_vel_b);
-    int pwm_b = pwm.actuator_n;
+    float linear_vel_b = 1;
+    // float linear_vel_b = daTwist.angular_y; // set requested velocity and feed into functions
+    if (linear_vel_b >= 0 && abs(linear_vel_b > max_vel)) { // Make sure that neither extension nor retraction will go above max speed
+        vel = max_vel;
+    } else if (linear_vel_b < 0 && abs(linear_vel_b > max_vel)) {
+        vel = -max_vel;
+    } else {
+        vel = linear_vel_b;
+    }
+    float pwm_b = ((abs(vel / max_vel) * pwm_res) * pwm_lim);
+    Serial.println(pwm_b);
 
     if (linear_vel_b > 0){
       analogWrite(forwardPin_top, pwm_b);
@@ -89,5 +108,4 @@ void loop(){
       digitalWrite(forwardPin_top, LOW);
       digitalWrite(backwardPin_top, LOW);
     }
-  }
 }
