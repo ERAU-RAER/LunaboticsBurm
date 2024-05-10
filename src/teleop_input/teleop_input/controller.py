@@ -22,7 +22,7 @@ class JoyToCmdVel:
 
         twist_msg = Twist()
 
-        twist_msg.linear.x = -(msg.axes[5]-1) + (msg.axes[2]-1)/2 # forward/Backward
+        twist_msg.linear.x = (-(msg.axes[5]-1) + (msg.axes[2]-1))/2 # forward/Backward
         twist_msg.angular.z = -(msg.axes[0]) # left/right
         twist_msg.linear.z = msg.axes[7] # bucket veritcle travel
         twist_msg.angular.y = float(msg.buttons[5] - msg.buttons[4]) # bucket rotation
