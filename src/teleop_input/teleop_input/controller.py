@@ -17,39 +17,16 @@ class JoyToCmdVel:
         self.cmdvel_pub = self.node.create_publisher(Twist, 'cmd_vel', 10)
 
 
-
+    # Convert joy message into twist message
     def joy_callback(self, msg):
-
-        # Process joystick input and generate Twist message
 
         twist_msg = Twist()
 
-        twist_msg.linear.x = msg.axes[1]  # Assuming Y-axis of the joystick for forward/backward motion
-
-        twist_msg.angular.z = msg.axes[0]  # Assuming X-axis of the joystick for rotation
-
-        twist_msg.linear.z = msg.axes[5]
-  
-        twist_msg.angular.y = msg.axes[4]
-
-        if msg.buttons[0]:
-
-            twist_msg.linear.y = 1.0
-
-        elif msg.buttons[1]:
-
-            twist_msg.linear.y = 2.0
-
-        elif msg.buttons[2]:
-
-            twist_msg.linear.y = 3.0
-
-        elif msg.buttons[3]:
-
-            twist_msg.linear.y = 4.0
-
-
-        # Publish Twist message
+        twist_msg.linear.x = -(msg.axes[5]-1) + (msg.axes[2]-1)/2 # forward/Backward
+        twist_msg.angular.z = -(msg.axes[0]) # left/right
+        twist_msg.linear.z = msg.axes[7] # bucket veritcle travel
+        twist_msg.angular.y = float(msg.buttons[5] - msg.buttons[4]) # bucket rotation
+        twist_msg.angular.x = float(msg.buttons[1]) #vibrate bucket
 
         self.cmdvel_pub.publish(twist_msg)
 
