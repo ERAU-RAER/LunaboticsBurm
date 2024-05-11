@@ -10,6 +10,7 @@
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+unsigned long lastMessage = 0;
 
 // const int hallPinA = 2;   // Hall sensor A pin
 // const int hallPinB = 3;   // Hall sensor B pin
@@ -64,6 +65,8 @@ void loop(){
       if (incomingChar == '/'){ // Delimiter, check if it's the end of the message
         // Process the received command
         daTwist = parseTwist(command);
+        lastMessage = millis();
+
 
         // Reset the command string for the next message
         command = "";
@@ -74,6 +77,10 @@ void loop(){
       }
     }
 
+    if(lastMessage < (millis() - 3000)) {
+    daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    }
+    
     sanityCheck(daTwist);
 
     if (daTwist.linear_z == 0.0){

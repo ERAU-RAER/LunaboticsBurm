@@ -36,6 +36,7 @@ DD_Kinematics Kinematics(MOTOR_MAX_RPM, WHEEL_DIAMETER, FR_WHEELS_DIST, LR_WHEEL
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+unsigned long lastMessage = 0;
 
 void setup() 
 {
@@ -77,6 +78,7 @@ void loop()
       // Process the received command
       daTwist = parseTwist(command);
       sanityCheck(daTwist);
+      lastMessage = millis();
 
       // Reset the command string for the next message
       command = "";
@@ -87,7 +89,9 @@ void loop()
       command += incomingChar;
     }
   }
-
+  if(lastMessage < (millis() - 3000)) {
+    daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+  }
   DD_Kinematics::output rpm;
   DD_Kinematics::output pwm;
 
