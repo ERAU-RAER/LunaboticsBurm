@@ -71,7 +71,7 @@ void loop()
 {
   while (Serial.available() > 0) // Check if any characters are available
   {
-    char incomingChar = Serial.read(); // Read the incoming character
+    command += Serial.read();
 
     if (command.size() == sizeof(Twist)) // Delimiter, check if it's the end of the message
     {
@@ -82,11 +82,6 @@ void loop()
 
       // Reset the command string for the next message
       command = "";
-    }
-    else
-    {
-      // Append the character to the command string
-      command += incomingChar;
     }
   }
 
