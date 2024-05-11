@@ -7,6 +7,7 @@
 #define backwardPin_top 43    // First pin for moving backward
 #define forwardPin_bottom 47  // First pin for moving forward
 #define backwardPin_bottom 49 // First pin for moving backward
+#define vibrationPin 24       // Pin for vibration motor
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -110,6 +111,12 @@ void loop(){
     else if (daTwist.angular_y < 0.0){
       digitalWrite(forwardPin_top, LOW);
       digitalWrite(backwardPin_top, HIGH);
+    }
+    if (daTwist.angular_x > 0){
+      digitalWrite(vibrationPin,HIGH);
+    }
+    else{
+      digitalWrite(vibrationPin,LOW);
     }
   }
 }
