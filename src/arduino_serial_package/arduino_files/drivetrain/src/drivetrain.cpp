@@ -40,7 +40,7 @@ unsigned long lastMessage = 0;
 
 void setup() 
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // Initialize motor speed control pins as outputs
   pinMode(motor1_pin, OUTPUT);

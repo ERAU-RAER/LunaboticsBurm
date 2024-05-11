@@ -32,7 +32,7 @@ unsigned long lastMessage = 0;
 // int encoderPeriod = 250;  // Period for publishing encoder
 
 void setup(){
-  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  Serial.begin(115200); // Initialize serial communication at 9600 baud rate
 
   // Set Actuator pins to output
   pinMode(forwardPin_top, OUTPUT);
