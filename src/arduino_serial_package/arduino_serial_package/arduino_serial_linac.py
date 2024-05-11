@@ -36,7 +36,7 @@ class SerialLinacNode(Node):
             10)
         
         # Publisher for received serial messages
-        self.serial_pub = self.create_publisher(String, '/arduino_chatter', 10)
+        self.serial_pub = self.create_publisher(String, '/linac_chatter', 10)
 
     def cmd_vel_callback(self, msg):
         if self.serial_port.is_open:
