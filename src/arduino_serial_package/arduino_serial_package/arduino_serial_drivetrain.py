@@ -50,7 +50,7 @@ class SerialDrivetrainNode(Node):
             
             # Format velocities as string
             cmd_str = f"{linear_x},{linear_y},{linear_z},{angular_x},{angular_y},{angular_z}"
-            cmd_str += "/"
+            # cmd_str += "/"
             
             # Send command over serial
             self.serial_port.write(cmd_str.encode())

@@ -73,7 +73,7 @@ void loop()
   {
     char incomingChar = Serial.read(); // Read the incoming character
 
-    if (incomingChar == '/') // Delimiter, check if it's the end of the message
+    if (command.size() == sizeof(Twist)) // Delimiter, check if it's the end of the message
     {
       // Process the received command
       daTwist = parseTwist(command);
@@ -89,9 +89,11 @@ void loop()
       command += incomingChar;
     }
   }
+
   if(lastMessage < (millis() - 3000)) {
     daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
   }
+
   DD_Kinematics::output rpm;
   DD_Kinematics::output pwm;
 
