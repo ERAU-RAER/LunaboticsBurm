@@ -5,7 +5,7 @@ package_name = 'teleop_input'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.1.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -17,14 +17,14 @@ setup(
     zip_safe=True,
     maintainer='jake_161',
     maintainer_email='jacob.browning161@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Custom Inputs',
+    license='IDGAF v1.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'teleop_twist_keyboard = teleop_input.teleop_twist_keyboard:main',
-            'controller = teleop_input.controller:controller'
-
+            'evan_scheme = teleop_input.evan_scheme:controller',
+            'collin_scheme = teleop_input.collin_scheme:controller'
         ],
     },
 )
