@@ -7,6 +7,7 @@
 #define backwardPin_top 43    // First pin for moving backward
 #define forwardPin_bottom 47  // First pin for moving forward
 #define backwardPin_bottom 49 // First pin for moving backward
+#define vibrationPin 24       // Pin for vibration motor
 
 String command = "";
 Twist daTwist = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -32,7 +33,7 @@ unsigned long lastMessage = 0;
 // int encoderPeriod = 250;  // Period for publishing encoder
 
 void setup(){
-  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  Serial.begin(115200); // Initialize serial communication at 9600 baud rate
 
   // Set Actuator pins to output
   pinMode(forwardPin_top, OUTPUT);
@@ -110,6 +111,12 @@ void loop(){
     else if (daTwist.angular_y < 0.0){
       digitalWrite(forwardPin_top, LOW);
       digitalWrite(backwardPin_top, HIGH);
+    }
+    if (daTwist.angular_x > 0){
+      digitalWrite(vibrationPin,HIGH);
+    }
+    else{
+      digitalWrite(vibrationPin,LOW);
     }
   }
 }
