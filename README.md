@@ -1,6 +1,6 @@
-# 2024 Lunabotics Competition - RAER Software Repo
+# Group Simulation and URDF Experiment
 
-This repo houses the ROS2 - Humble workspace for our submission in the 2024 NASA RMC (Regolith Mining Competition)
+This repo houses the ROS2 - Humble workspace for a test of simulation via Gazebo and ROS2 Control
 
 
 ### Structure
@@ -8,35 +8,21 @@ This repo houses the ROS2 - Humble workspace for our submission in the 2024 NASA
 The source code of the project follows this structure:
 
 ```
-LunaboticsBurm                                   <--- Root of the ROS2 Workspace
-├── launch
-│   └── launchfile-1.xml                         <--- ROS2 launch files with custom parameters
-└── src                                          <--- ROS2 Packages
-    ├── ROS2-Package-1
-    │   ├── arduino_files                        <--- Microcontroller companion code
-    │   │   ├── platform-1                       <--- Platform.io project parent directory
-    │   │   │   ├── include
-    │   │   │   ├── lib
-    │   │   │   ├── platformio.ini
-    │   │   │   └── src
-    │   │   │       └── main.cpp
-    │   │   └── platform-2                       <--- Platform.io project parent directory
-    │   └── ROS2-Package-1                       <--- ROS2 Package source code
-    │       ├── node1.py                         <--- ROS2 Node
-    │       └── node2.py                         <--- ROS2 Node
-    └── ROS2-Package-2      
+LunaboticsBurm                              <--- Root of the ROS2 Workspace
+└── src/ 
+    └── my_robot/
+        ├──config/                          <--- This is where configs go
+        ├──launch/                          <--- This is where launch files go
+        ├──urdf/                            <--- This is where robot descriptions go
+        ├──include/
+        ├──src/
+        ├──CMakeLists.txt                   <--- This tells the computer how to build our programs
+        └──package.xml                      <--- This tells the computer some extra info
 ```
 
-## Code Overview
+## Install Me:
+    TODO
 
-### ROS2 Packages:
 
-1. arduino_serial_package - This package is responsible for communicating with various microcontrollers over serial. This includes drivetrain and linear actuator signaling
-2. teleop_input - This package contains modified teleop_twist nodes for the specific functional requirment of the robot
-
-## Setup Details
-
-The setup for each node and Arduino program is documented in each respective README file.
-
-1. For nodes, this is found at the package level.
-2. For Arduino files, this is found at the project level.
+## Setup Steps:
+    TODO
