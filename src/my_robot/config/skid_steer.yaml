@@ -1,0 +1,18 @@
+# config/skid_steer.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+      left_wheel_names: ["wheel_joint_back_left", "wheel_joint_front_left"]  # Joints for the left wheels
+      right_wheel_names: ["wheel_joint_back_right", "wheel_joint_front_right"]  # Joints for the right wheels
+      wheel_separation: 0.5  # Distance between left and right wheel pairs
+      wheel_radius: 0.125  # Radius of the wheels
+      cmd_vel_timeout: 0.5  # Timeout for velocity commands
+      publish_rate: 50  # Rate to publish odometry data
+      use_stamped_vel: false  # If true, expect stamped velocity commands (cmd_vel_stamped)
+      open_loop: false  # Set to true for open loop control
+      cmd_vel_topic: "cmd_vel"  # Topic to receive velocity commands
+
+    joint_state_broadcaster:
+      type: "joint_state_broadcaster/JointStateBroadcaster"
