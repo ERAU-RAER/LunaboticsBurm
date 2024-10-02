@@ -7,21 +7,9 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(sensor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-
-# Add the following lines at the end of CMakeLists.txt
-
-add_executable(joint_publisher src/joint_publisher.cpp)
-ament_target_dependencies(joint_publisher rclcpp sensor_msgs)
-
-install(TARGETS
-  joint_publisher
-  DESTINATION lib/${PROJECT_NAME}
-)
 
 install(DIRECTORY 
     launch
