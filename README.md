@@ -25,4 +25,6 @@ LunaboticsBurm                              <--- Root of the ROS2 Workspace
 
 
 ## Setup Steps:
-    TODO
+
+1. ``` ros2 launch gazebo_ros gazebo.launch.py```
+2. 
