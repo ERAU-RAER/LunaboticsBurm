@@ -1,3 +1,4 @@
+<!--COPY THIS TO YOUR OWN "my_robot.xacro"-->
 <?xml version="1.0"?>
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
   

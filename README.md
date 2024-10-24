@@ -20,8 +20,11 @@ LunaboticsBurm                              <--- Root of the ROS2 Workspace
         └──package.xml                      <--- This tells the computer some extra info
 ```
 
-## Install Me:
-    TODO
+## Generate URDF from Xacro:
+1. ```
+    cd ~/LunaboticsBurm
+    ros2 run xacro xacro src/my_robot/urdf/my_robot.urdf.xacro -o src/my_robot/urdf/my_robot.urdf
+    ```
 
 
 ## Setup Steps:
