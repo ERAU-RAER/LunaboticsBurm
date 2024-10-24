@@ -26,10 +26,13 @@ LunaboticsBurm                              <--- Root of the ROS2 Workspace
 
 ## Setup Steps:
 
-1. ``` ros2 launch gazebo_ros gazebo.launch.py```
+1. ```
+    ros2 launch gazebo_ros gazebo.launch.py
+    ```
 2.  Open new terminal
-3 ``` cd ~/LunaboticsBurm
-colcon build
-source install/setup.bash
-ros2 launch my_robot spawn_my_robot.launch.py 
-```
+3. ``` 
+    cd ~/LunaboticsBurm
+    colcon build
+    source install/setup.bash
+    ros2 launch my_robot spawn_my_robot.launch.py 
+    ```
